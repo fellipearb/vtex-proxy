@@ -1,0 +1,4669 @@
+@import url(//fonts.googleapis.com/css?family=Dosis:400,500,600,700,800);
+@import url(//chillibeans.vteximg.com.br/arquivos/normalize.min.css);
+@charset "UTF-8";
+
+html, body {
+    min-height: 100%;
+    font-family: Dosis, sans-serif
+}
+body {
+    background: #000 url(chb-bg.gif)
+}
+body.blackfriday {
+    background: #222 url(home-bg-blackfriday.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    overflow-x: hidden
+}
+.mn-fimdeano-vermelho {
+    width: 270px;
+    height: 80px;
+    display: table;
+    background: url(mn-fimdeano-vermelho-02.png) no-repeat top center;
+    background-position: top;
+    text-align: center;
+    margin: 0 auto
+}
+.mn-fimdeano-amarelo {
+    width: 270px;
+    height: 80px;
+    display: table;
+    background: url(mn-fimdeano-amarelo-02.png) no-repeat top center;
+    background-position: top;
+    text-align: center;
+    margin: 0 auto
+}
+.mn-fimdeano-marrom {
+    width: 270px;
+    height: 80px;
+    display: table;
+    background: url(mn-fimdeano-marrom-02.png) no-repeat top center;
+    background-position: top;
+    text-align: center;
+    margin: 0 auto
+}
+.mn-fimdeano-rosa {
+    width: 270px;
+    height: 80px;
+    display: table;
+    background: url(mn-fimdeano-rosa-02.png) no-repeat top center;
+    background-position: top;
+    text-align: center;
+    margin: 0 auto
+}
+.mn-fimdeano-verde {
+    width: 270px;
+    height: 80px;
+    display: table;
+    background: url(mn-fimdeano-verde-02.png) no-repeat top center;
+    background-position: top;
+    text-align: center;
+    margin: 0 auto
+}
+.mn-fimdeano-laranja {
+    width: 270px;
+    height: 80px;
+    display: table;
+    background: url(mn-fimdeano-laranja-02.png) no-repeat top center;
+    background-position: top;
+    text-align: center;
+    margin: 0 auto
+}
+.mn-fimdeano-azul {
+    width: 270px;
+    height: 80px;
+    display: table;
+    background: url(mn-fimdeano-azul-02.png) no-repeat top center;
+    background-position: top;
+    text-align: center;
+    margin: 0 auto
+}
+.mn-fimdeano-dourado {
+    width: 270px;
+    height: 80px;
+    display: table;
+    background: url(mn-fimdeano-dourado-02.png) no-repeat top center;
+    background-position: top;
+    text-align: center;
+    margin: 0 auto
+}
+.mn-fimdeano-branco {
+    width: 270px;
+    height: 80px;
+    display: table;
+    background: url(mn-fimdeano-branco-02.png) no-repeat top center;
+    background-position: top;
+    text-align: center;
+    margin: 0 auto
+}
+.mn-fimdeano-prata {
+    width: 270px;
+    height: 80px;
+    display: table;
+    background: url(mn-fimdeano-prata-02.png) no-repeat top center;
+    background-position: top;
+    text-align: center;
+    margin: 0 auto
+}
+.mn-fimdeano-maiscores {
+    width: 270px;
+    height: 80px;
+    display: table;
+    background: url(mn-fimdeano-maiscores-02.png) no-repeat;
+    background-position: top;
+    text-align: center;
+    margin: 0 auto
+}
+.mn-fimdeano-vermelho:hover, .mn-fimdeano-amarelo:hover, .mn-fimdeano-marrom:hover, .mn-fimdeano-rosa:hover, .mn-fimdeano-verde:hover, .mn-fimdeano-laranja:hover, .mn-fimdeano-azul:hover, .mn-fimdeano-dourado:hover, .mn-fimdeano-branco:hover, .mn-fimdeano-prata:hover, .mn-fimdeano-maiscores:hover {
+    background-position: bottom
+}
+.mn-fimdeano-amarelo.active, .mn-fimdeano-vermelho.active, .mn-fimdeano-marrom.active, .mn-fimdeano-rosa.active, .mn-fimdeano-verde.active, .mn-fimdeano-laranja.active, .mn-fimdeano-azul.active, .mn-fimdeano-dourado.active, .mn-fimdeano-branco.active, .mn-fimdeano-prata.active, .mn-fimdeano-maiscores.active {
+    background-position: bottom;
+    display: block
+}
+.invisible {
+    display: none !important
+}
+.fb-comments, .fb-comments span, .fb-comments iframe[style] {
+    width: 100% !important
+}
+.busca .ui-input-btn {
+    font-size: 0
+}
+div#scrollLoading, div#ajaxBusy {
+    position: absolute
+}
+div#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000;
+    opacity: .7;
+    z-index: 1;
+    display: none
+}
+div#carregando {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000 url(chb-loading.gif) center center no-repeat;
+    opacity: .5;
+    z-index: 4;
+    display: none
+}
+div#wrapper {
+    width: 100%;
+    display: table
+}
+div.holder {
+    display: block;
+    margin: 0 auto
+}
+html.lt-ie9 header div.first-lvl {
+    background: #fff !important
+}
+div#returnToTop {
+    display: none !important
+}
+body.vendacorporativa div.ads {
+    display: none
+}
+div.vitrine-especial {
+    width: 68%;
+    display: none;
+    margin: 0 auto 20px
+}
+div.vitrine-especial div.logo-vitrine-especial {
+    display: table;
+    float: left;
+    width: 36%;
+    margin-right: 2%
+}
+div.vitrine-especial div.logo-vitrine-especial img {
+    width: 100%;
+    display: block
+}
+div.vitrine-especial p {
+    width: 62%;
+    display: table;
+    float: right;
+    font-size: 14px
+}
+body.manto-sagrado div#wrapper {
+    background: url(bg-especial-manto-sagrado.jpg) top center no-repeat;
+    background-size: 100% auto
+}
+body.manto-sagrado div#wrapper div.vitrine-especial {
+    display: table
+}
+body.manto-sagrado div#wrapper div.vitrine-especial div.logo-vitrine-especial {
+    max-width: 245px
+}
+body.manto-sagrado div#wrapper div.vitrine-especial p {
+    color: #d9bb7a
+}
+section.content {
+    width: 1174px;
+    padding: 45px 0;
+    margin: 0 auto
+}
+section.content.produtoDetail div.divulgacoes {
+    display: none
+}
+section.content.produtoDetail .cntPrdDetail {
+    display: table;
+    width: 100%;
+    clear: both;
+    margin-bottom: 20px;
+    background: #fff;
+    position: relative
+}
+section.content.produtoDetail .cntPrdDetail div#produto {
+    width: 665px;
+    float: left
+}
+section.content.produtoDetail .cntPrdDetail div#produto h2 {
+    display: none
+}
+section.content.produtoDetail .cntPrdDetail div#produto div.apresentacao {
+    float: left;
+    width: 560px;
+    display: none
+}
+section.content.produtoDetail .cntPrdDetail div#produto div.apresentacao ul.thumbs {
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0
+}
+section.content.produtoDetail .cntPrdDetail div#produto div.apresentacao ul.thumbs li {
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 #FFF;
+    margin-top: 15.3px;
+    line-height: 20px
+}
+section.content.produtoDetail .cntPrdDetail div#produto div.apresentacao ul.thumbs li:first-child {
+    margin-top: 0
+}
+section.content.produtoDetail .cntPrdDetail div#produto div.apresentacao div#include {
+    float: right;
+    position: relative;
+    text-align: center
+}
+section.content.produtoDetail .cntPrdDetail div#produto div.apresentacao div#include #image {
+    float: left;
+    overflow: hidden;
+    background: none repeat scroll 0 0 #FFF
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile {
+    width: 620px;
+    margin: 30px auto 10px;
+    display: block;
+    position: relative
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile div.cnt {
+    width: 400px;
+    margin: 0 auto
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile div.cnt div.owl-controls div.owl-pagination {
+    display: none
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile div.cnt div.owl-controls div.owl-prev {
+    position: absolute;
+    left: -110px;
+    top: 45%;
+    background: url(sprite-icons.png) -173px -108px no-repeat;
+    width: 15px;
+    height: 28px;
+    overflow: hidden;
+    text-indent: -1000px;
+    z-index: 1000
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile div.cnt div.owl-controls div.owl-next {
+    position: absolute;
+    right: 0;
+    left: 480px;
+    top: 45%;
+    background: url(sprite-icons.png) -207px -108px no-repeat;
+    width: 15px;
+    height: 28px;
+    overflow: hidden;
+    text-indent: -1000px;
+    z-index: 9
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs {
+    width: 400px;
+    margin: 0 auto 30px;
+    display: block;
+    position: relative
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs div.cnt {
+    width: 336px;
+    margin: 0 auto
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs div.cnt>ul {
+    position: static
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs div.cnt>ul div.owl-item {
+    opacity: .4
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs div.cnt>ul div.owl-item.synced {
+    opacity: 1
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs div.cnt>ul div.owl-item img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 63px
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs div.cnt div.owl-controls div.owl-pagination {
+    display: none
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs div.cnt div.owl-controls div.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 24%;
+    background: url(seta-produto-left.png) no-repeat;
+    width: 15px;
+    height: 28px;
+    overflow: hidden;
+    text-indent: -1000px
+}
+section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs div.cnt div.owl-controls div.owl-next {
+    position: absolute;
+    right: 0;
+    top: 24%;
+    background: url(seta-produto-right.png) no-repeat;
+    width: 15px;
+    height: 28px;
+    overflow: hidden;
+    text-indent: -1000px
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes {
+    float: right;
+    width: 500px;
+    background: #fff;
+    padding: 50px 30px 40px;
+    position: relative
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes a.readmore-js-toggle {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #868686;
+    font-weight: 600;
+    margin-top: 5px;
+    text-decoration: none;
+    background: url(bg-link-vermais.png) center center no-repeat
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes h2, section.content.produtoDetail .cntPrdDetail div.detalhes h1 {
+    font-size: 14px;
+    color: #868686;
+    text-align: center
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.productDescription {
+    font-size: 13px;
+    color: #868686;
+    text-align: center;
+    margin-top: 10px
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.preco-holder {
+    color: #868686
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.preco-holder p.descricao-preco {
+    text-align: center
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.preco-holder p.descricao-preco em.valor-por {
+    font-style: normal
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.preco-holder p.descricao-preco em.valor-por strong.skuBestPrice {
+    color: #868686;
+    font-weight: 400;
+    font-size: 26px
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.preco-holder p.descricao-preco em.valor-dividido {
+    font-style: normal;
+    font-size: 26px;
+    color: #ed1e25;
+    font-weight: 700
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.preco-holder p.descricao-preco em.valor-dividido strong {
+    font-weight: 700
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.preco-holder p.preco-a-vista {
+    display: none !important
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.botao {
+    margin-top: 20px
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.botao .garantia {
+    text-align: center;
+    width: 100%;
+    margin-top: 7px;
+    padding-top: 7px
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.botao .garantia>p {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 5px;
+    vertical-align: top
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.botao .garantia .box-over {
+    display: inline-block;
+    position: relative
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.botao .garantia .box-over>span {
+    width: 18px;
+    height: 18px;
+    display: block;
+    font-size: 13px;
+    background: #f24d52;
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 0;
+    border-radius: 18px;
+    margin-top: -2px
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.botao .garantia .box-over>.over {
+    display: none;
+    background: #FFF;
+    border: 1px solid #868686;
+    position: absolute;
+    top: 17px;
+    right: 0;
+    font-size: 13px;
+    width: 180px;
+    padding: 5px;
+    font-size: 13px;
+    color: #868686;
+    text-align: center;
+    z-index: 9999
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.botao .garantia .box-over:hover>.over {
+    display: block
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.botao .garantia span {
+    border-radius: 19px 19px;
+    background-color: #f24d52;
+    color: #FFF;
+    width: 19px;
+    height: 19px;
+    display: block;
+    font-size: 16px;
+    float: right;
+    margin-top: -2px
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.botao a.buy-button {
+    margin: 0 auto;
+    display: block;
+    background: #f24d52 url(seta-botao.png) right no-repeat;
+    background-position: 96% 50%;
+    width: 250px;
+    border-radius: 4px;
+    line-height: 55px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 16px;
+    border-bottom: 5px solid #b4181d
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.adicionar {
+    margin-top: 20px
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes a.adicionar {
+    width: 201px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 0 0 12px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f01918;
+    border: 1px solid #f01918;
+    text-transform: uppercase;
+    text-align: left;
+    background: url(btn-adicionar-sacola-red.png) no-repeat right;
+    margin: 12px auto 0;
+    text-decoration: none;
+    position: relative;
+    border-radius: 3px;
+    display: block
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes a.adicionar p.btn {
+    font-weight: 700
+}
+section.content.produtoDetail .cntPrdDetail div.prateleiraCores {
+    width: 370px;
+    height: 112px;
+    border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+    margin: 20px auto 0
+}
+section.content.produtoDetail .cntPrdDetail div.prateleiraCores h2 {
+    text-transform: uppercase;
+    font-size: 12px;
+    background: url(bg-title-cores.png) center repeat-x;
+    margin-bottom: 7px;
+    text-align: center;
+    color: #868686
+}
+section.content.produtoDetail .cntPrdDetail div.prateleiraCores ul {
+    display: table;
+    margin: 0 auto;
+    height: 112px;
+    overflow: hidden
+}
+section.content.produtoDetail .cntPrdDetail div.prateleiraCores ul li {
+    float: left;
+    margin: 0 5px
+}
+section.content.produtoDetail .cntPrdDetail div.prateleiraCores ul li img {
+    width: 56px;
+    height: auto
+}
+section.content.produtoDetail .cntPrdDetail div.redes:before, section.content.produtoDetail .cntPrdDetail div.redes:after {
+    display: table;
+    line-height: 0;
+    content: ""
+}
+section.content.produtoDetail .cntPrdDetail div.redes:after {
+    clear: both
+}
+section.content.produtoDetail .cntPrdDetail div.redes {
+    margin: 20px auto 0;
+    width: 370px;
+    *zoom: 1
+}
+section.content.produtoDetail .cntPrdDetail div.redes div#divFacebook {
+    float: left;
+    margin-right: 5px
+}
+section.content.produtoDetail .cntPrdDetail div.redes div#divTwitter {
+    float: left;
+    margin-right: 5px
+}
+section.content.produtoDetail .cntPrdDetail div.redes div#divTwitter a.twitter-share-button {
+    width: 41px;
+    height: 22px;
+    display: block;
+    background: url(ico-chb-twitter.gif) no-repeat;
+    overflow: hidden;
+    text-indent: -1000px
+}
+section.content.produtoDetail .cntPrdDetail div.redes div.printWrapper {
+    position: relative;
+    top: -2px;
+    float: right
+}
+section.content.produtoDetail .cntPrdDetail div.redes div.printWrapper a.imprimirBt {
+    width: 76px;
+    height: 28px;
+    display: block;
+    background: url(bt-chb-imprimir.png) no-repeat;
+    overflow: hidden;
+    text-indent: -1000px
+}
+section.content.produtoDetail .cntPrdDetail div.redes div#divGooglePlus {
+    float: left;
+    width: 64px;
+    margin-right: 16px
+}
+section.content.produtoDetail .cntPrdDetail div.redes div#divPinterest {
+    float: left
+}
+section.content.produtoDetail div.bn-cnt {
+    display: none
+}
+section.content.produtoDetail div.video {
+    float: left;
+    width: 570px;
+    height: 350px
+}
+section.content.produtoDetail div.video img {
+    display: block;
+    width: 100%
+}
+section.content.produtoDetail div.descricaoProduto {
+    float: right;
+    margin: 0 auto;
+    width: 570px
+}
+section.content.produtoDetail div.descricaoProduto a.readmore-js-toggle {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+    text-decoration: none;
+    background: url(bg-link-vermais.png) center center no-repeat
+}
+section.content.produtoDetail div.descricaoProduto h4 {
+    display: none
+}
+section.content.produtoDetail div.descricaoProduto table {
+    width: 100%
+}
+section.content.produtoDetail div.descricaoProduto table tbody tr {
+    border-bottom: 1px solid #2a2b2d
+}
+section.content.produtoDetail div.descricaoProduto table tbody tr th {
+    color: #9c9ca3;
+    font-weight: 600;
+    width: 215px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 14px;
+    padding: 5px 0 5px 20px;
+    background: url(seta-detalhes-produtos.png) 1px 12px no-repeat
+}
+section.content.produtoDetail div.descricaoProduto table tbody tr td {
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 0
+}
+section.content.produtoDetail div.descricaoProduto table tbody tr th.name-field.Video, section.content.produtoDetail div.descricaoProduto table tbody tr td.value-field.Video {
+    display: none
+}
+section.content.produtoDetail div.descricaoProduto table tbody tr:first-child th {
+    padding: 0 0 5px 20px;
+    background-position: 1px 7px
+}
+section.content.produtoDetail div.descricaoProduto table tbody tr:first-child td {
+    padding: 0 0 5px
+}
+.descricaoProduto .name-field.Ponte,
+.descricaoProduto .value-field.Ponte,
+.descricaoProduto .name-field.Lente,
+.descricaoProduto .value-field.Lente,
+.descricaoProduto .name-field.Haste,
+.descricaoProduto .value-field.Haste,
+.descricaoProduto .name-field.Largura-Fixa,
+.descricaoProduto .value-field.Largura-Fixa,
+.descricaoProduto .name-field.Mostrador,
+.descricaoProduto .value-field.Mostrador,
+.descricaoProduto .name-field.Comprimento,
+.descricaoProduto .value-field.Comprimento,
+.descricaoProduto .name-field.Altura,
+.descricaoProduto .value-field.Altura{
+    display: none !important;
+}
+
+section.content.produtoDetail div.extras-oculos {
+    display: none;
+    /*display: table;*/
+    margin: 15px auto 0
+}
+section.content.produtoDetail div.extras-oculos ul {
+    display: table;
+    margin: 0 auto
+}
+section.content.produtoDetail div.extras-oculos ul li {
+    float: left;
+    width: 275px;
+    height: 70px;
+    position: relative;
+    margin: 5px 5px 0
+}
+section.content.produtoDetail div.extras-oculos ul li.case, section.content.produtoDetail div.extras-oculos ul li.flanela, section.content.produtoDetail div.extras-oculos ul li.saco-flanela, section.content.produtoDetail div.extras-oculos ul li.uva-uvb {
+    display: none !important
+}
+section.content.produtoDetail div.extras-oculos ul li:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 1px solid #2d2e2f;
+    width: 265px
+}
+section.content.produtoDetail div.extras-oculos ul li:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    border-left: 1px solid #2d2e2f;
+    height: 50px
+}
+section.content.produtoDetail div.extras-oculos ul li div.cnt {
+    display: table;
+    margin: 0 auto
+}
+section.content.produtoDetail div.extras-oculos ul li div.ico {
+    float: left
+}
+section.content.produtoDetail div.extras-oculos ul li div.ico img {
+    width: 100%;
+    display: block
+}
+section.content.produtoDetail div.extras-oculos ul li div.description {
+    float: left;
+    width: 155px;
+    margin-left: 25px
+}
+section.content.produtoDetail div.extras-oculos ul li div.description h6 {
+    color: #ab034a;
+    font-size: 18px;
+    font-weight: 18px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+section.content.produtoDetail div.extras-oculos ul li div.description p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px
+}
+section.content.produtoDetail div.extras-oculos ul li.meses:before {
+    border-left: 0
+}
+section.content.produtoDetail div.extras-oculos ul li.meses div.ico {
+    width: 38px;
+    height: 45px;
+    margin-top: 10px;
+    background: url(sprite-icons.png) -246px -33px no-repeat
+}
+section.content.produtoDetail div.extras-oculos ul li.meses div.description {
+    margin-top: 10px
+}
+section.content.produtoDetail div.extras-oculos ul li.case div.ico {
+    width: 41px;
+    margin-top: 12px
+}
+section.content.produtoDetail div.extras-oculos ul li.case div.description {
+    margin-top: 2px
+}
+section.content.produtoDetail div.extras-oculos ul li.uva-uvb div.ico {
+    width: 51px;
+    margin-top: 6px;
+    height: 57px;
+    background: url(sprite-icons.png) -110px -27px no-repeat
+}
+section.content.produtoDetail div.extras-oculos ul li.uva-uvb div.description {
+    margin-top: 4px
+}
+section.content.produtoDetail div.extras-oculos ul li.saco-flanela div.ico {
+    width: 63px;
+    height: 63px;
+    background: url(sprite-icons.png) -162px -25px no-repeat
+}
+section.content.produtoDetail div.extras-oculos ul li.flanela div.ico {
+    width: 29px;
+    margin-top: 18px
+}
+section.content.produtoDetail div.extras-oculos ul li.flanela div.description {
+    margin-top: 4px
+}
+div.bread-crumb {
+    background: url(bg-breadcrumb.png) repeat;
+    display: table;
+    height: 24px;
+    margin-bottom: 20px
+}
+div.bread-crumb ul {
+    display: table;
+    margin-left: 22px
+}
+div.bread-crumb ul li {
+    float: left;
+    padding: 3px 15px 0 8px;
+    background: url(seta-breadcrumb.png) right no-repeat
+}
+div.bread-crumb ul li.last {
+    background: 0 0
+}
+div.bread-crumb ul li a {
+    color: #fff;
+    font-size: 11px;
+    line-height: 11px;
+    text-decoration: none;
+    position: relative;
+    top: -4px;
+    text-transform: uppercase
+}
+div.bread-crumb ul li a:hover {
+    text-decoration: underline
+}
+section.content div.cabecalho-vitrine-mobile {
+    display: none;
+    width: 100%;
+    background: #e7a626;
+    padding: 20px 10px;
+    margin-bottom: 0;
+    text-transform: uppercase
+}
+section.content div.cabecalho-vitrine-mobile h6 {
+    font-size: 21px;
+    line-height: 21px;
+    color: #010101;
+    float: left;
+    font-weight: 600;
+    padding: 4px 0;
+    border: 3px solid #e7a626
+}
+section.content div.cabecalho-vitrine-mobile a.filtros {
+    float: right;
+    font-size: 20px;
+    color: #010101;
+    font-weight: 600;
+    border: 3px solid #735313;
+    border-radius: 3px;
+    display: block;
+    text-decoration: none;
+    padding: 2px 10px
+}
+section.content div.carousel-cnt {
+    width: 1174px;
+    display: block;
+    padding-top: 50px;
+    position: relative;
+    margin: 10px auto 20px
+}
+section.content div.carousel-cnt h5 {
+    color: #f13e44;
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+section.content div.carousel-cnt h2 {
+    display: none
+}
+section.content div.carousel-cnt ul.owl-carousel {
+    position: static
+}
+section.content div.carousel-cnt ul.owl-carousel li {
+    background: #fff;
+    position: relative
+}
+section.content div.carousel-cnt ul.owl-carousel li:before {
+    content: '';
+    width: 1px;
+    height: 90%;
+    background: #e6e6e6;
+    position: absolute;
+    left: 0;
+    top: 5%
+}
+section.content div.carousel-cnt ul.owl-carousel li a.productImage img {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    margin: 0 auto;
+    display: block
+}
+section.content div.carousel-cnt ul.owl-carousel li div.data {
+    width: 100%;
+    position: absolute;
+    bottom: 4%;
+    text-align: center;
+    line-height: 15px
+}
+section.content div.carousel-cnt ul.owl-carousel li div.data h3 {
+    display: none
+}
+section.content div.carousel-cnt ul.owl-carousel li div.data div.adicionar {
+    display: none
+}
+section.content div.carousel-cnt ul.owl-carousel li div.data p.price a {
+    text-decoration: none;
+    color: #ed1e25;
+    font-weight: 600
+}
+section.content div.carousel-cnt ul.owl-carousel li div.data p.price span.bestPrice {
+    display: block;
+    font-size: 16px
+}
+section.content div.carousel-cnt ul.owl-carousel li div.data p.price span.bestPrice span {
+    display: none
+}
+section.content div.carousel-cnt ul.owl-carousel li div.data p.price em.installment {
+    font-style: normal;
+    font-size: 12px;
+    color: #868686
+}
+section.content div.carousel-cnt ul.owl-carousel li div.data p.price em {
+    color: #ed1e25;
+    font-style: normal;
+    font-weight: 600
+}
+section.content div.carousel-cnt ul.owl-carousel div.owl-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0
+}
+section.content div.carousel-cnt ul.owl-carousel div.owl-controls div.owl-buttons div {
+    display: inline-block;
+    margin: 0 0 0 44px;
+    padding: 0;
+    opacity: 1;
+    border-radius: 0;
+    width: 13px;
+    height: 29px;
+    overflow: hidden;
+    text-indent: -1000px;
+    background: url(seta-carousel.png) no-repeat
+}
+section.content div.carousel-cnt ul.owl-carousel div.owl-controls div.owl-buttons div.owl-prev {
+    background-position: 0 0
+}
+section.content div.carousel-cnt ul.owl-carousel div.owl-controls div.owl-buttons div.owl-next {
+    background-position: -44px 0
+}
+section.content div.carousel-cnt ul.owl-carousel div.owl-controls div.owl-pagination {
+    display: none !important
+}
+section.content div.resultado-busca {
+    margin: 30px 0;
+    padding: 0 10px;
+    width: auto;
+    color: #fff
+}
+section.content div.resultado-busca div.termo {
+    font-size: 16px
+}
+section.content div.resultado-busca div.termo span.termosBuscado, section.content div.resultado-busca div.termo h1.termosBuscado {
+    display: block;
+    color: #f13e44;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600
+}
+section.content div.resultado-busca div.total {
+    color: #fff
+}
+section.content div.resultado-busca div.total span {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 27px;
+    font-weight: 600
+}
+section.content div.busca-nao-encontrada {
+    width: 660px;
+    margin: 0 auto;
+    display: table;
+    text-align: center
+}
+section.content div.busca-nao-encontrada div.notFound {
+    margin: 0 auto 70px;
+    display: table;
+    font-size: 36px;
+    color: #fff;
+    text-align: center
+}
+section.content div.busca-nao-encontrada div.notFound span.termoBuscado {
+    font-weight: 600;
+    color: #f13e44
+}
+section.content div.busca-nao-encontrada div.notFound span.breaker {
+    display: block
+}
+section.content div.busca-nao-encontrada h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #e7a618;
+    font-weight: 600;
+    margin-bottom: 30px
+}
+section.content div.busca-nao-encontrada div.top-categorias {
+    width: 330px;
+    float: left;
+    border-right: 1px solid #36393d;
+    text-align: left
+}
+section.content div.busca-nao-encontrada div.top-categorias span.ico {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px
+}
+section.content div.busca-nao-encontrada div.top-categorias span.ico img {
+    display: block
+}
+section.content div.busca-nao-encontrada div.top-categorias a {
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none
+}
+section.content div.busca-nao-encontrada div.top-categorias a:hover {
+    text-decoration: underline
+}
+section.content div.busca-nao-encontrada div.top-categorias ul li {
+    margin-bottom: 10px
+}
+section.content div.busca-nao-encontrada div.outras-categorias {
+    width: 330px;
+    float: left
+}
+section.content div.busca-nao-encontrada div.outras-categorias h5 {
+    margin-bottom: 35px
+}
+section.content div.busca-nao-encontrada div.outras-categorias h6 {
+    margin-bottom: 30px
+}
+section.content div.busca-nao-encontrada div.outras-categorias h6 a {
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none
+}
+section.content div.busca-nao-encontrada div.outras-categorias ul li {
+    line-height: 13px;
+    margin-bottom: 10px
+}
+section.content div.busca-nao-encontrada div.outras-categorias ul li a {
+    font-size: 13px;
+    color: #c3c3c3;
+    text-transform: uppercase;
+    text-decoration: none
+}
+section.content div.busca-nao-encontrada div.outras-categorias ul li a:hover {
+    text-decoration: underline
+}
+section.content div.busca-nao-encontrada div.outras-categorias div.bolsas {
+    float: left;
+    width: 200px
+}
+section.content div.busca-nao-encontrada div.outras-categorias div.kids {
+    float: left;
+    width: 100%;
+    text-align: center
+}
+section.content div.busca-nao-encontrada div.outras-categorias div.lifestyle {
+    float: left
+}
+section.content aside {
+    float: left;
+    width: 270px;
+    display: block;
+    margin: 0 0 0 10px;
+    overflow-x: hidden
+}
+section.content aside h3 {
+    width: 100%;
+    background: #f13e44;
+    margin-bottom: 5px
+}
+section.content aside h3 a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 30px 0 30px 20px;
+    font-size: 16px
+}
+section.content aside div.menu-navegue {
+    display: none
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator {
+    margin-top: 5px
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator a.bt-refinar, section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator h4 {
+    display: none
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator ul.productClusterSearchableIds {
+    display: table;
+    width: 270px;
+    background: #2b2b2b;
+    text-transform: uppercase;
+    display: none
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator ul.productClusterSearchableIds a.ver-filtros {
+    color: #fff;
+    font-size: 12px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 36px;
+    font-style: italic
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator ul.productClusterSearchableIds li {
+    padding: 0 0 0 25px;
+    line-height: 36px
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator ul.productClusterSearchableIds li a {
+    color: #949494;
+    font-size: 13px;
+    text-decoration: none
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator ul.productClusterSearchableIds li.filtro-ativo {
+    background: #000 url(tich-filtro.gif) right no-repeat;
+    color: #fff;
+    font-size: 13px
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: #2b2b2b
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator fieldset label {
+    padding: 0 0 0 25px;
+    line-height: 36px;
+    color: #949494;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    z-index: 2
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator fieldset label input[type=checkbox] {
+    position: absolute;
+    visibility: hidden
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator fieldset label.sr_, section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator fieldset label.sr_selected {
+    background: #000 url(tich-filtro.gif) right no-repeat;
+    color: #fff;
+    font-size: 13px
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-multiple-navigator fieldset a.ver-filtros {
+    color: #fff;
+    font-size: 12px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 36px;
+    font-style: italic
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-single-navigator>ul {
+    display: block;
+    width: 270px;
+    background: #2b2b2b;
+    text-transform: uppercase
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-single-navigator>ul.productClusterSearchableIds {
+    display: none !important
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-single-navigator>ul a.ver-filtros {
+    color: #fff;
+    font-size: 12px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 36px;
+    font-style: italic
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-single-navigator>ul li {
+    padding: 0 0 0 25px;
+    line-height: 36px
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-single-navigator>ul li a {
+    color: #949494;
+    font-size: 13px;
+    text-decoration: none
+}
+section.content aside div.navigation-tabs div.menu-departamento div div.search-single-navigator>ul li.filtro-ativo {
+    background: #000 url(tich-filtro.gif) right no-repeat;
+    color: #fff;
+    font-size: 13px
+}
+section.content aside h5 {
+    background: #353535 url(seta-down-sidebar.gif) right no-repeat;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 34px;
+    padding-left: 25px;
+    -webkit-box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .3);
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    border-bottom: 1px solid #1f1f1f
+}
+section.content aside h5.ulOpened {
+    background: #353535 url(seta-up-sidebar.gif) right no-repeat
+}
+section.content div.cnt-vitrine {
+    float: right;
+    width: 870px
+}
+section.content div.cnt-vitrine div.vtexsr-emptySearch {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center
+}
+section.content div.cnt-vitrine div.carregar-mais {
+    display: table;
+    width: 100%
+}
+section.content div.cnt-vitrine div.carregar-mais a.loadMoreItems {
+    outline: none;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    background: url(bg-link-carregar-mais.png) center center no-repeat
+}
+section.content div.cnt-vitrine div.ordenar {
+    height: 89px;
+    margin-top: 3px
+}
+section.content div.cnt-vitrine div.ordenar label {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px
+}
+section.content div.cnt-vitrine div.ordenar a.ordenar-lnk {
+    border: 2px solid #7d2428;
+    border-radius: 2px;
+    padding: 5px 5px 5px 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 14px;
+    width: 185px;
+    position: relative
+}
+section.content div.cnt-vitrine div.ordenar a.ordenar-lnk span.ico {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 17px;
+    height: 9px;
+    background: url(seta-dropdown.png) no-repeat
+}
+section.content div.cnt-vitrine div.main p.searchResultsTime {
+    display: none
+}
+section.content div.cnt-vitrine div.main div.sub {
+    display: none
+}
+section.content div.cnt-vitrine div.main div.pager {
+    display: none
+}
+.resultItemsWrapper .prateleira:first-child {
+    margin-top: 5px
+}
+#ResultItems_ .prateleira>ul>li>a.highlight>p.flag.lancamentos-da-semana {
+    width: 62px;
+    height: 66px;
+    background: url(flag-selo-lancamentos.png) no-repeat;
+    font-size: 0;
+    display: block !important
+}
+section.content div.cnt-vitrine div.main ul li {
+    width: 33%;
+    padding: 1.1%;
+    background: #fff;
+    float: left;
+    position: relative
+}
+section.content div.cnt-vitrine div.main ul li:after {
+    content: '';
+    width: 90%;
+    height: 1px;
+    background: rgba(0, 0, 0, .09);
+    position: absolute;
+    bottom: -1px;
+    left: 5%;
+    z-index: 1
+}
+section.content div.cnt-vitrine div.main ul li:before {
+    content: '';
+    width: 1px;
+    height: 90%;
+    background: #e6e6e6;
+    position: absolute;
+    left: 0;
+    top: 5%
+}
+section.content div.cnt-vitrine div.main ul li a {
+    width: 100%;
+    display: block
+}
+section.content div.cnt-vitrine div.main ul li a img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 268px
+}
+section.content div.cnt-vitrine div.main ul li a .txt {
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle
+}
+section.content div.cnt-vitrine div.main ul li a.prateleira-hover:before {
+    content: ' ';
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    vertical-align: middle;
+    width: 1px;
+    font-size: 0
+}
+section.content div.cnt-vitrine div.main ul li a.prateleira-hover {
+    width: 100%;
+    height: 100%;
+    background: url(lancamentos-overlay.png);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none
+}
+section.content div.cnt-vitrine div.main ul li a p.btn {
+    width: 201px;
+    height: 26px;
+    line-height: 26px;
+    margin-left: -102px;
+    padding: 0 0 0 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+    background: transparent url(sprite-icons.png) no-repeat 168px -160px;
+    background-size: 360px;
+    bottom: 12px;
+    left: 50%;
+    border: 1px solid #FFF;
+    position: absolute;
+    border-radius: 3px;
+    outline: none;
+    outline: none
+}
+section.content div.cnt-vitrine div.main ul li p.code {
+    padding: 0 0 40px;
+    font-size: 12px;
+    text-transform: uppercase
+}
+section.content div.cnt-vitrine div.main ul li a.prateleira-hover span.oldPrice {
+    display: block;
+    position: relative;
+    bottom: -16px;
+    text-decoration: line-through
+}
+section.content div.cnt-vitrine div.main ul li p.sub {
+    font-size: 26px
+}
+section.content div.cnt-vitrine div.main ul li p.price {
+    padding: 0 0 5px;
+    font-size: 26px;
+    text-transform: uppercase
+}
+section.content div.cnt-vitrine div.main ul li div.data {
+    width: 100%;
+    position: absolute;
+    bottom: 4%;
+    text-align: center;
+    line-height: 15px
+}
+section.content div.cnt-vitrine div.main ul li div.data p.price {
+    padding-top: 5px;
+    background: url(bgdepor.png);
+    width: 96%;
+    position: relative;
+    bottom: -11px
+}
+section.content div.cnt-vitrine div.main ul li div.data p.outOfStock {
+    font-size: 13px;
+    color: #000
+}
+section.content div.cnt-vitrine div.main ul li div.data h3 {
+    display: none
+}
+section.content div.cnt-vitrine div.main ul li div.data div.buttonBy {
+    display: none
+}
+section.content div.cnt-vitrine div.main ul li div.data a {
+    text-decoration: none
+}
+section.content div.cnt-vitrine div.main ul li div.data a span.oldPrice {
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #868686;
+    display: block
+}
+section.content div.cnt-vitrine div.main ul li div.data a span.newPrice {
+    display: block;
+    font-size: 16px;
+    padding-top: 3px
+}
+section.content div.cnt-vitrine div.main ul li div.data a span.newPrice span {
+    display: none
+}
+section.content div.cnt-vitrine div.main ul li div.data a span.newPrice em {
+    color: #868686;
+    font-style: normal;
+    font-weight: 400
+}
+section.content div.cnt-vitrine div.main ul li div.data a em.installment {
+    font-style: normal;
+    font-size: 16px;
+    display: block;
+    color: #ed1e25;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-weight: 900
+}
+section.content.produtoDetail .cntPrdDetail div.detalhes div.preco-holder em.economia-de {
+    display: block;
+    text-align: center
+}
+.easyzoom-flyout {
+    position: absolute;
+    left: 510px;
+    top: -5px;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    border: 1px solid #000;
+    z-index: 9999999999999
+}
+body.produto #prateleiras_full {
+    width: 100%;
+    display: table;
+    background-color: #fff
+}
+body.produto #prateleiras_full div h2 {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-bottom: 25px
+}
+body.produto #prateleiras_full div h2 span.red {
+    color: #ed1e25;
+    font-weight: 600
+}
+body.produto #prateleiras_full div ul li {
+    float: left;
+    display: block;
+    border-left: solid 1px #e4e4e4
+}
+body.produto #prateleiras_full div {
+    display: table;
+    width: 100%
+}
+body.produto .quemViuViuTambem div li {
+    width: 290px;
+    height: 290px;
+    list-style: none;
+    float: left;
+    position: relative;
+    border: 0 !important
+}
+body.produto .quemViuViuTambem div li span.price {
+    display: none
+}
+body.produto .quemViuViuTambem div li a p.btn {
+    width: 163px;
+    height: 26px;
+    line-height: 26px;
+    margin-left: -76px;
+    padding: 0 0 0 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+    background: #f01918 url(sprite-icons.png) no-repeat 135px -160px;
+    background-size: 360px;
+    bottom: 12px;
+    left: 50%;
+    position: absolute;
+    border-radius: 3px
+}
+body.produto .quemViuViuTambem div li a.internal-link {
+    width: 300px;
+    height: 300px;
+    background: url(lancamentos-overlay.png);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none
+}
+body.produto .quemViuViuTambem div li a span {
+    font-weight: 600
+}
+body.produto .quemViuViuTambem div li a .code {
+    padding: 86px 0 40px;
+    font-size: 12px;
+    text-transform: uppercase
+}
+body.produto .quemViuViuTambem div li a .price {
+    padding: 0 0 5px;
+    font-size: 26px;
+    text-transform: uppercase
+}
+body.produto .quemViuViuTambem div li a .sub {
+    font-size: 26px
+}
+body.produto .quemViuViuTambem div li:first-child+li {
+    display: block
+}
+li.two .box-banner:first-child{
+    margin: 5px 5px 0 5px;
+}
+li.two .box-banner:first-child img  {
+    background: #f13e44;
+}
+
+@media (min-width:920px) {
+    body.produto .quemViuViuTambem div li:hover a {
+        display: block
+    }
+    .content-header-v2 .header-v2 .logo-v2 .md {
+        width: 75%;
+        margin-top: 5px
+    }
+}
+body.produto .quemViuViuTambem div.active {
+    display: block
+}
+body.landing .content {
+    padding: 0 !important
+}
+body.landing .bg-landings {
+    display: none
+}
+body.landing .back-landings {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: block;
+    background-repeat: repeat;
+    background-position: top center;
+    position: absolute;
+    left: 0;
+    z-index: -1
+}
+body.landing aside .box-banner img {
+    margin-bottom: 15px;
+    display: block
+}
+body.landing .banner-landings img {
+    width: 100%;
+    height: auto
+}
+body.landing .banner-landings {
+    margin-top: -15px
+}
+.highlight .flag {
+    display: none
+}
+.highlight .flag, body.produto .flag {
+    display: none;
+    position: relative
+}
+.highlight .flag.lancamentos-da-semana {
+    width: 62px;
+    height: 66px;
+    background: url(lancamentos-da-semana-selo-new.png) no-repeat top right;
+    font-size: 0;
+    float: left;
+    display: block !important;
+    position: absolute
+}
+.highlight .flag.outlet-chilli {
+    width: 62px;
+    height: 62px;
+    background: url(/arquivos/selo-outlet-chilli.png) no-repeat center;
+    font-size: 0;
+    float: right;
+    display: block !important;
+    background-size: 100% auto;
+    right:0;
+    position: absolute;
+}
+.highlight .flag.rock-fellas {
+    position: absolute;
+    display: none !important;
+    width: 100%;
+    height: 100px;
+    background: url(rocke-fellas.png) left no-repeat;
+    font-size: 0;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+.highlight .flag.porta-dos-fundos {
+    position: absolute;
+    display: block !important;
+    width: 100%;
+    height: 30px;
+    background: url(porta-dos-fundos.png) left no-repeat;
+    font-size: 0;
+    top: 15px;
+    left: 0;
+    z-index: 1
+}
+.highlight .flag.black-friday {
+    position: absolute;
+    display: none !important;
+    width: 64px;
+    height: 64px;
+    background: url(chillibeans-selo-blackfriday.png) left no-repeat;
+    font-size: 0;
+    top: 15px;
+    left: 17px;
+    z-index: 1
+}
+body.produto .flag.porta-dos-fundos {
+    position: relative;
+    display: block !important;
+    width: 100%;
+    height: 30px;
+    background: url(porta-dos-fundos-2-selo-pag-produtos.png) center no-repeat;
+    font-size: 0;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+body.produto .selo {
+    margin: 30px 0 10px 0
+}
+body.produto .flag.rock-fellas {
+    position: relative;
+    display: block !important;
+    width: 100%;
+    height: 100px;
+    background: url(rocke-fellas.png) center no-repeat;
+    font-size: 0;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+body.produto .flag.black-friday {
+    position: relative;
+    display: none !important;
+    width: 64px;
+    height: 64px;
+    background: url(chillibeans-selo-blackfriday.png) center no-repeat;
+    font-size: 0;
+    top: -10px;
+    left: 180px;
+    z-index: 1
+}
+@media(min-width:0) and (max-width:640px) {
+    body>#wrapper>.content>aside {
+        display: none
+    }
+}
+@media(min-width:920px) {
+    section.content div.cnt-vitrine div.main ul li a p.btn:hover {
+        border: 1px solid #FFF;
+        background: url(sprite-icons.png) no-repeat 168px -180px;
+        display: block;
+        outline: none
+    }
+}
+@media(min-width:920px) {
+    section.content div.cnt-vitrine div.main ul li:hover div.data {
+        display: none
+    }
+    section.content div.cnt-vitrine div.main ul li:hover a.prateleira-hover {
+        display: block
+    }
+}
+@media(min-width:1281px) {
+    body.landing .back-landings {
+        background-size: 1920px
+    }
+    #chamadas {
+        width: 1200px;
+        display: table;
+        //margin: 91px auto;
+        margin: 91px auto 45px auto;
+        position: relative
+    }
+    #chamadas li {
+        width: 300px;
+        height: 300px;
+        float: left
+    }
+    #chamadas li .box-banner a img {
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px
+    }
+    #chamadas li.two a {
+        display: block;
+        height: 150px
+    }
+    #chamadas li.big {
+        width: 600px;
+        height: 210px
+    }
+    #chamadas li.big .box-banner a img {
+        width: 100%;
+        height: 302px
+    }
+    #chamadas li.video {
+        width: 282px;
+        height: 285px;
+        right: 8px;
+        position: absolute;
+        top: 309px
+    }
+    #chamadas li.sete {
+        clear: both
+    }
+    #chamadas .box-banner {
+        position: relative
+    }
+    #chamadas li .hover-caption {
+        position: absolute;
+        top: -16px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 999;
+        display: none
+    }
+    #chamadas li .hover-caption h4 {
+        color: #FFF;
+        padding: 0 10px;
+        margin-top: 95px;
+        font-size: 30px;
+        text-transform: uppercase
+    }
+    #chamadas li .hover-caption span {
+        font-size: 20px;
+        color: #e6a800
+    }
+    #chamadas li .hover-caption .pimentahover {
+        background: url(sprite-icons.png) -182px -304px no-repeat;
+        width: 38px;
+        height: 15px;
+        position: relative;
+        margin: 0 auto;
+        top: 280px
+    }
+    #chamadas div#overlay-chamadas {
+        width: 100%;
+        height: 98.6%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #000;
+        opacity: .8;
+        z-index: 9;
+        display: none
+    }
+    .vitrine-reestruturacao {
+        width: 1189px;
+        display: block;
+        margin: 50px auto;
+        clear: both
+    }
+    .vitrine-reestruturacao .bloco {
+        width: 100%;
+        display: block;
+        clear: both;
+        margin-bottom: 50px;
+        padding-bottom: 200px
+    }
+    .vitrine-reestruturacao .bloco .img-vitrine, .vitrine-reestruturacao .bloco .colecao-vitrine {
+        float: left;
+        display: block
+    }
+    .vitrine-reestruturacao .bloco .img-vitrine {
+        width: 20% !important
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine .new-vitrine h2 {
+        display: none
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine {
+        width: 80% !important;
+        background-color: #fff
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li {
+        width: 100%;
+        //width: 232px;
+        height: 239px;
+        float: left;
+        display: block;
+        position: relative;
+        //margin-left: 4px;
+        border-right: solid 1px #ececec
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li span.price {
+        display: none
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li:hover a.internal-link {
+        display: block
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a.internal-link {
+        width: 100%;
+        //width: 236px;
+        height: 239px;
+        background: url(lancamentos-overlay.png);
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: none
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a.internal-link p.code {
+        margin-top: 50px
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a.internal-link p.sub {
+        margin-top: 23px
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a p.btn {
+        width: 163px;
+        height: 24px;
+        margin-left: -82px;
+        padding: 0 0 0 12px;
+        background: url(btn-new-adicionar-a-sacola.jpg) no-repeat;
+        bottom: 12px;
+        left: 50%;
+        text-indent: -999999px;
+        position: absolute;
+        border-radius: 3px
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li img {
+        width: 173px;
+        height: auto;
+        margin: 21px auto;
+        display: block
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li.helperComplement {
+        width: 4px;
+        height: 212px;
+        border-right: solid 1px #ececec;
+        margin-top: 13px
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine .owl-carousel .owl-wrapper .owl-item {
+        float: left
+    }
+    .owl-controls .owl-buttons div {
+        background: url(seta-vitrines.png) no-repeat 0 0;
+        text-indent: -999999px;
+        width: 18px;
+        height: 32px;
+        position: absolute
+    }
+    .owl-controls .owl-buttons .owl-prev {
+        background-position: 0 0;
+        top: 99px;
+        left: 10px
+    }
+    .owl-controls .owl-buttons .owl-next {
+        background-position: -23px 0;
+        top: 99px;
+        left: 930px;
+        //left: 940px
+    }
+}
+@media(max-width:1359px) {
+    #chamadas {
+        width: 1200px;
+        height: 900px;
+        margin: 0 auto;
+        position: relative
+    }
+    #chamadas li {
+        width: 300px;
+        height: 300px;
+        float: left
+    }
+    #chamadas li.two a {
+        height: 150px;
+        display: block
+    }
+    #chamadas li.big {
+        width: 600px
+    }
+    #chamadas li.video {
+        width: 300px
+    }
+    #chamadas li.last {
+        top: 0;
+        left: 0;
+        position: static
+    }
+    #chamadas .box-banner {
+        position: relative
+    }
+    #chamadas li .hover-caption {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 999;
+        display: none
+    }
+    #chamadas li .hover-caption h4 {
+        color: #FFF;
+        margin-top: 105px;
+        padding: 0 10px;
+        text-transform: uppercase;
+        font-size: 26px
+    }
+    #chamadas li .hover-caption span {
+        font-size: 16px;
+        color: #e6a800
+    }
+    #chamadas li .hover-caption .pimentahover {
+        background: url(sprite-icons.png) -182px -304px no-repeat;
+        width: 38px;
+        height: 15px;
+        position: relative;
+        margin: 0 auto;
+        top: 275px
+    }
+    #chamadas div#overlay-chamadas {
+        width: 100%;
+        height: 98.6%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #000;
+        opacity: .8;
+        z-index: 9;
+        display: none
+    }
+}
+@media(min-width:1200px) {
+    body.landing .breadcrumb-landings {
+        width: 1174px;
+        margin: 50px auto 0
+    }
+    body.landing .breadcrumb-landings img {
+        height: 170px
+    }
+}
+@media (max-width:1199px) {
+    body.landing .breadcrumb-landings {
+        width: 970px;
+        margin: 20px auto 0
+    }
+    body.landing .back-landings {
+        background-size: 1220px
+    }
+    #chamadas li .hover-caption h4 {
+        margin-top: 75px
+    }
+    section.content {
+        width: 970px;
+        padding: 25px 0
+    }
+    section.content.produtoDetail .cntPrdDetail {
+        display: table;
+        width: 100%;
+        clear: both;
+        margin-bottom: 20px;
+        background: #fff
+    }
+    section.content.produtoDetail .cntPrdDetail div#produto {
+        width: 530px
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile {
+        width: 480px
+    }
+    section.content.produtoDetail .cntPrdDetail div.detalhes {
+        width: 440px;
+        padding: 15px 10px 40px
+    }
+    section.content.produtoDetail div.video {
+        width: 470px
+    }
+    section.content.produtoDetail div.descricaoProduto {
+        width: 470px
+    }
+    section.content.produtoDetail div.extras-oculos ul li {
+        width: 230px;
+        height: 70px
+    }
+    section.content.produtoDetail div.extras-oculos ul li:after {
+        width: 220px
+    }
+    section.content.produtoDetail div.extras-oculos ul li:before {
+        height: 50px
+    }
+    section.content.produtoDetail div.extras-oculos ul li div.description {
+        margin-left: 15px
+    }
+    section.content div.carousel-cnt {
+        width: 970px;
+        display: block
+    }
+    section.content aside {
+        float: left;
+        width: 270px;
+        display: table;
+        margin: 0 0 0 1px
+    }
+    section.content div.cnt-vitrine {
+        float: right;
+        width: 675px;
+        margin: 0 1px 0 0
+    }
+    #chamadas li .hover-caption {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 999;
+        display: none
+    }
+    #chamadas li .hover-caption h4 {
+        color: #FFF;
+        margin-top: 75px;
+        padding: 0 10px;
+        text-transform: uppercase;
+        font-size: 26px
+    }
+    #chamadas li .hover-caption span {
+        font-size: 16px;
+        color: #e6a800
+    }
+    #chamadas li .hover-caption .pimentahover {
+        background: url(sprite-icons.png) -182px -304px no-repeat;
+        width: 38px;
+        height: 15px;
+        position: relative;
+        margin: 0 auto;
+        top: 223px
+    }
+    #chamadas div#overlay-chamadas {
+        width: 100%;
+        height: 98.5%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #000;
+        opacity: .8;
+        z-index: 9;
+        display: none
+    }
+}
+@media (max-width:1023px) {
+    header {
+        position: fixed !important;
+        top: 0
+    }
+    body.landing .breadcrumb-landings {
+        width: 750px;
+        margin: 70px auto 0
+    }
+    #chamadas li .hover-caption h4 {
+        margin-top: 80px
+    }
+    #chamadas li .hover-caption .pimentahover {
+        top: 220px
+    }
+    #chamadas li .box-banner a img {
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px
+    }
+    .ads div:first-child {
+        margin-right: 14px
+    }
+    body.politicaPrivacidade div.ads {
+        display: none
+    }
+    section.content {
+        width: 750px;
+        padding: 96px 0 45px
+    }
+    section.content.produtoDetail .cntPrdDetail {
+        display: table;
+        width: 100%;
+        clear: both;
+        margin-bottom: 20px;
+        background: #fff
+    }
+    section.content.produtoDetail .cntPrdDetail div#produto {
+        width: 350px;
+        padding-bottom: 100px
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile {
+        width: 350px
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile div.cnt {
+        width: 330px
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile div.owl-item {
+        width: 100%
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile div.owl-item img {
+        width: 100%;
+        display: block
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile div.owl-controls div.owl-pagination {
+        display: block !important
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile div.owl-controls div.owl-buttons {
+        display: none
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs {
+        display: none
+    }
+    section.content.produtoDetail .cntPrdDetail div.detalhes {
+        width: 390px;
+        padding: 15px 15px 20px
+    }
+    section.content.produtoDetail .cntPrdDetail div.prateleiraCores {
+        width: 370px;
+        margin-top: 15px
+    }
+    section.content.produtoDetail .cntPrdDetail div.redes {
+        width: 340px
+    }
+    section.content.produtoDetail div.video {
+        width: 370px;
+        margin-left: 10px
+    }
+    section.content.produtoDetail div.descricaoProduto {
+        width: 340px;
+        margin-right: 10px
+    }
+    section.content.produtoDetail div.descricaoProduto table tbody tr th {
+        width: 100%;
+        display: block;
+        padding: 5px 0 0 20px
+    }
+    section.content.produtoDetail div.descricaoProduto table tbody tr td {
+        width: 100%;
+        display: block;
+        padding-left: 20px
+    }
+    section.content.produtoDetail div.descricaoProduto table tbody tr:first-child th {
+        padding: 5px 0 0 20px;
+        background-position: 1px 12px
+    }
+    section.content.produtoDetail div.descricaoProduto table tbody tr:first-child td {
+        padding-left: 20px
+    }
+    section.content.produtoDetail div.extras-oculos {
+        width: 95%
+    }
+    section.content.produtoDetail div.extras-oculos ul {
+        width: 100%
+    }
+    section.content.produtoDetail div.extras-oculos ul li {
+        width: 50%;
+        margin: 5px 0 20px
+    }
+    section.content.produtoDetail div.extras-oculos ul li div.description {
+        margin-left: 20px
+    }
+    section.content.produtoDetail div.extras-oculos ul li:after {
+        border-bottom: 0
+    }
+    section.content.produtoDetail div.extras-oculos ul li:before {
+        border-left: 0
+    }
+    section.content div.carousel-cnt {
+        width: 750px;
+        display: block
+    }
+    section.content div.busca-nao-encontrada {
+        width: 660px
+    }
+    section.content div.busca-nao-encontrada div.top-categorias {
+        width: 330px;
+        float: left
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias {
+        width: 330px;
+        float: left
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias div.bolsas {
+        width: 200px
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias div.kids {
+        text-align: center
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias div.lifestyle {
+        float: left
+    }
+    section.content aside {
+        float: left;
+        width: 36%;
+        display: table;
+        margin: 0 1.5%
+    }
+    section.content div.cnt-vitrine {
+        float: right;
+        margin-right: 1.5%;
+        width: 59%
+    }
+    section.content div.cnt-vitrine div.main ul li {
+        width: 50%
+    }
+    .easyzoom-flyout {
+        position: absolute;
+        left: 370px;
+        top: -5px;
+        height: 400px;
+        width: 350px;
+        overflow: hidden;
+        border: 1px solid #000;
+        z-index: 9999999999999
+    }
+}
+@media (max-width:767px) {
+    body.landing .breadcrumb-landings {
+        width: 100%
+    }
+    body.landing .back-landings {
+        background-size: 1000px
+    }
+    #chamadas li .hover-caption h4 {
+        margin-top: 110px;
+        font-size: 24px
+    }
+    #chamadas li .hover-caption .pimentahover {
+        top: 295px
+    }
+    div.vitrine-especial {
+        display: none !important
+    }
+    section.content {
+        width: 100%
+    }
+    section.content.produtoDetail .cntPrdDetail {
+        width: 95%;
+        margin: 0 auto
+    }
+    section.content.produtoDetail .cntPrdDetail div#produto {
+        width: 400px;
+        margin: 0 auto;
+        float: none;
+        padding: 0
+    }
+    section.content.produtoDetail .cntPrdDetail div#produto h2 {
+        font-size: 20px;
+        color: #868686;
+        text-align: center;
+        display: block;
+        margin-top: 15px
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile {
+        width: 400px;
+        margin-top: 15px
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile div.cnt {
+        width: 400px
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs {
+        display: none
+    }
+    section.content.produtoDetail .cntPrdDetail div.detalhes {
+        float: none;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 15px 15px
+    }
+    section.content.produtoDetail .cntPrdDetail div.preco-holder {
+        margin-top: 0
+    }
+    section.content.produtoDetail .cntPrdDetail div.botao a.buy-button {
+        width: 210px
+    }
+    section.content.produtoDetail .cntPrdDetail div.prateleiraCores {
+        max-width: 100%;
+        position: relative;
+        margin-top: 32px
+    }
+    section.content.produtoDetail .cntPrdDetail div.redes {
+        width: 84%;
+        position: static;
+        text-align: center
+    }
+    section.content.produtoDetail .cntPrdDetail div.redes div#divFacebook {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px
+    }
+    section.content.produtoDetail .cntPrdDetail div.redes div#divTwitter {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px
+    }
+    section.content.produtoDetail .cntPrdDetail div.redes div#divGooglePlus {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+        width: 75px;
+        margin-right: 5px
+    }
+    section.content.produtoDetail .cntPrdDetail div.redes div#divPinterest {
+        float: none;
+        display: inline-block;
+        vertical-align: middle
+    }
+    section.content.produtoDetail .cntPrdDetail div.redes div.printWrapper {
+        display: none
+    }
+    section.content.produtoDetail .cntPrdDetail div.redes>div {
+        float: left;
+        display: block
+    }
+    section.content.produtoDetail .cntPrdDetail div.redes .whatsapp {
+        margin-left: 6px;
+        margin-top: 1px
+    }
+    section.content.produtoDetail div.bn-cnt {
+        width: 95%;
+        margin: 0 auto;
+        display: table
+    }
+    section.content.produtoDetail div.bn-cnt div.bn {
+        width: 50%;
+        height: 65px;
+        line-height: 20px
+    }
+    section.content.produtoDetail div.bn-cnt div.bn div.texto {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        position: relative;
+        top: -1px
+    }
+    section.content.produtoDetail div.bn-cnt div.bn div.cnt {
+        width: 151px
+    }
+    section.content.produtoDetail div.bn-cnt div.bn.frete {
+        float: left;
+        background: #ab034a
+    }
+    section.content.produtoDetail div.bn-cnt div.bn.frete div.cnt {
+        float: right
+    }
+    section.content.produtoDetail div.bn-cnt div.bn.frete div.cnt img {
+        width: 130px;
+        float: right;
+        margin: 0 10px 0 0
+    }
+    section.content.produtoDetail div.bn-cnt div.bn.frete div.cnt div.texto {
+        color: #e7a618;
+        margin: 10px 10px 0 10%;
+        float: right
+    }
+    section.content.produtoDetail div.bn-cnt div.bn.troca {
+        float: right;
+        background: #e7a618
+    }
+    section.content.produtoDetail div.bn-cnt div.bn.troca div.cnt {
+        float: left
+    }
+    section.content.produtoDetail div.bn-cnt div.bn.troca div.cnt img {
+        width: 130px;
+        float: left;
+        margin: 8px 0 2px 10px
+    }
+    section.content.produtoDetail div.bn-cnt div.bn.troca div.cnt div.texto {
+        color: #ab034a;
+        margin: 0 0 0 10px;
+        float: left
+    }
+    section.content.produtoDetail div.video {
+        width: 47%;
+        margin-left: 16px
+    }
+    section.content.produtoDetail div.descricaoProduto {
+        width: 46.5%;
+        margin-left: 10px
+    }
+    section.content.produtoDetail div.descricaoProduto table tbody tr th {
+        width: 100%;
+        background-position: 1px 11px
+    }
+    section.content div.carousel-cnt {
+        display: block;
+        width: 630px
+    }
+    section.content div.cabecalho-vitrine-mobile {
+        display: none;
+        position: relative;
+        z-index: 1
+    }
+    section.content aside {
+        width: 100%;
+        display: block;
+        top: 235px;
+        z-index: 3;
+        margin: 0 auto;
+        text-align: center
+    }
+    section.content aside h3 {
+        display: none
+    }
+    section.content div.resultado-busca {
+        margin: 20px 0 5px
+    }
+    section.content div.busca-nao-encontrada {
+        width: 98%;
+        margin: 30px auto 0
+    }
+    section.content div.busca-nao-encontrada div.notFound {
+        margin: 0 auto 50px;
+        font-size: 30px
+    }
+    section.content div.busca-nao-encontrada div.notFound span.termoBuscado {
+        display: block
+    }
+    section.content div.busca-nao-encontrada div.notFound span.breaker {
+        width: 300px;
+        display: block
+    }
+    section.content div.busca-nao-encontrada h5 {
+        text-align: center
+    }
+    section.content div.busca-nao-encontrada div.top-categorias {
+        width: 100%;
+        border-right: 0;
+        margin: 0 auto 50px;
+        display: table
+    }
+    section.content div.busca-nao-encontrada div.top-categorias span.ico {
+        display: block;
+        margin: 0 auto
+    }
+    section.content div.busca-nao-encontrada div.top-categorias span.ico img {
+        margin: 0 auto 10px
+    }
+    section.content div.busca-nao-encontrada div.top-categorias a {
+        font-size: 13px
+    }
+    section.content div.busca-nao-encontrada div.top-categorias ul li {
+        margin: 0 21px;
+        float: left;
+        text-align: center
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias {
+        width: 100%;
+        display: table
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias h5 {
+        margin-bottom: 35px
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias ul li {
+        line-height: 13px;
+        margin-bottom: 10px
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias ul li a {
+        font-size: 13px;
+        color: #c3c3c3;
+        text-transform: uppercase;
+        text-decoration: none
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias ul li a:hover {
+        text-decoration: underline
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias div.bolsas ul, section.content div.busca-nao-encontrada div.outras-categorias div.kids ul, section.content div.busca-nao-encontrada div.outras-categorias div.lifestyle ul {
+        display: none
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias div.bolsas a, section.content div.busca-nao-encontrada div.outras-categorias div.kids a, section.content div.busca-nao-encontrada div.outras-categorias div.lifestyle a {
+        font-size: 20px;
+        display: block;
+        line-height: 28px;
+        background: url(seta-busca-nao-encontrada.gif) right no-repeat
+    }
+    section.content div.cnt-vitrine {
+        float: right;
+        margin-right: 0;
+        width: 100%;
+        padding: 2%
+    }
+    section.content div.cnt-vitrine div.ordenar {
+        clear: both;
+        float: none;
+        height: 60px
+    }
+    section.content div.cnt-vitrine div.ordenar label {
+        display: none
+    }
+    section.content div.cnt-vitrine div.ordenar a.ordenar-lnk {
+        margin-top: 0
+    }
+    section.content div.cnt-vitrine div.main ul li {
+        width: 33%
+    }
+    #chamadas li .hover-caption {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 999;
+        display: none !important
+    }
+    #chamadas li .hover-caption h4 {
+        color: #FFF;
+        margin-top: 105px;
+        padding: 0 10px;
+        text-transform: uppercase;
+        font-size: 28px
+    }
+    #chamadas li .hover-caption span {
+        font-size: 16px;
+        color: #e6a800
+    }
+    #chamadas li .hover-caption .pimentahover {
+        background: url(sprite-icons.png) -182px -304px no-repeat;
+        width: 38px;
+        height: 15px;
+        position: relative;
+        margin: 0 auto;
+        top: 300px
+    }
+    #chamadas div#overlay-chamadas {
+        width: 100%;
+        height: 99%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #000;
+        opacity: .8;
+        z-index: 9;
+        display: none !important
+    }
+}
+@media (max-width:630px) {
+    section.content div.carousel-cnt {
+        display: block;
+        width: 550px
+    }
+    #chamadas li .hover-caption h4 {
+        margin-top: 40px;
+        font-size: 20px
+    }
+    #chamadas li .hover-caption .pimentahover {
+        top: 150px
+    }
+    body.landing .back-landings {
+        background-size: 1000px
+    }
+    section.content div.cnt-vitrine div.main ul li a .txt {
+        display: none
+    }
+    section.content div.cnt-vitrine div.main ul li a.prateleira-hover {
+        background: none
+    }
+    section.content div.cnt-vitrine div.main ul li div.data {
+        display: inline-block !important
+    }
+}
+@media (max-width:640px) {
+    section.content div.cnt-vitrine div.main ul li a .txt {
+        display: none
+    }
+    section.content div.cnt-vitrine div.main ul li a.prateleira-hover {
+        background: none
+    }
+    section.content div.cnt-vitrine div.main ul li div.data {
+        display: inline-block !important
+    }
+    a.bgPrateleira {
+        position: absolute !important;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: block
+    }
+}
+@media (max-width:570px) {
+    section.content.produtoDetail div.video {
+        width: 95%;
+        margin: 0 auto 30px;
+        float: none
+    }
+    section.content.produtoDetail div.descricaoProduto {
+        width: 95%;
+        margin: 0 auto;
+        float: none
+    }
+    section.content.produtoDetail div.descricaoProduto table tbody tr th {
+        width: 100%;
+        background-position: 1px 11px
+    }
+    body.landing .back-landings {
+        background-size: 850px
+    }
+    .vitrine-reestruturacao {
+        width: 318px !important;
+        display: block;
+        margin: 50px auto;
+        clear: both
+    }
+    .vitrine-reestruturacao .bloco {
+        width: 100%;
+        display: block;
+        clear: both;
+        margin-bottom: 50px;
+        padding-bottom: 120px !important
+    }
+    .vitrine-reestruturacao .bloco .img-vitrine, .vitrine-reestruturacao .bloco .colecao-vitrine {
+        float: left;
+        display: block
+    }
+    .vitrine-reestruturacao .bloco .img-vitrine {
+        width: 159px !important
+    }
+    .vitrine-reestruturacao .bloco .img-vitrine a img {
+        width: 159px !important;
+        height: auto
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine .new-vitrine h2 {
+        display: none
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine {
+        width: 159px !important;
+        background-color: #fff
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li {
+        width: 159px !important;
+        height: 158px !important;
+        float: left;
+        display: block;
+        position: relative;
+        border-right: solid 1px #ececec;
+        margin-left: 0px !important
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li span.price {
+        display: none
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li:hover a.internal-link {
+        display: block
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a.internal-link {
+        width: 159px !important;
+        height: 158px !important;
+        background: url(lancamentos-overlay.png);
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: none
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a.internal-link p.code {
+        margin-top: 30px !important
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a.internal-link p.sub {
+        margin-top: 23px !important
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a p.btn {
+        width: 110px !important;
+        height: 17px !important;
+        margin-left: -56px !important;
+        padding: 0 0 0 12px;
+        background: url(btn-new-adicionar-a-sacola-mobile.jpg) no-repeat !important;
+        bottom: 12px;
+        left: 50%;
+        text-indent: -999999px;
+        position: absolute;
+        border-radius: 3px
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li img {
+        width: 112px !important;
+        height: auto;
+        margin: 21px auto !important;
+        display: block
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li.helperComplement {
+        width: 4px;
+        height: 212px;
+        border-right: solid 1px #ececec;
+        margin-top: 13px
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine .owl-carousel .owl-wrapper .owl-item {
+        float: left
+    }
+    .owl-controls .owl-buttons div {
+        background: url(seta-vitrines.png) no-repeat 0 0;
+        text-indent: -999999px;
+        width: 18px;
+        height: 32px;
+        position: absolute
+    }
+    .owl-controls .owl-buttons .owl-prev {
+        background-position: 0 0;
+        top: 62px !important;
+        left: 10px !important
+    }
+    .owl-controls .owl-buttons .owl-next {
+        background-position: -23px 0;
+        top: 62px !important;
+        left: 131px !important
+    }
+}
+@media (max-width:550px) {
+    section.content div.carousel-cnt {
+        display: block;
+        width: 450px
+    }
+    body.landing .back-landings {
+        background-size: 700px
+    }
+}
+@media (max-width:480px) {
+    section.content.produtoDetail .cntPrdDetail div.preco-holder {
+        float: none
+    }
+    body.landing .back-landings {
+        background-size: 680px
+    }
+    section.content {
+        padding: 45px 0
+    }
+    div.bread-crumb {
+        width: 100%;
+        margin-bottom: 0
+    }
+    section.content.produtoDetail .cntPrdDetail {
+        width: 95%;
+        margin: 0 auto
+    }
+    section.content.produtoDetail .cntPrdDetail div#produto {
+        width: 270px;
+        margin: 0 auto;
+        float: none
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile {
+        width: 270px
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobile div.cnt {
+        width: 270px
+    }
+    section.content.produtoDetail .cntPrdDetail div.HolderCarouselMobileThumbs {
+        display: none
+    }
+    section.content.produtoDetail .cntPrdDetail div.detalhes {
+        float: none;
+        width: 95%;
+        margin: 0 auto
+    }
+    section.content.produtoDetail .cntPrdDetail div.detalhes div.botao a.buy-button {
+        width: 165px;
+        font-size: 24px
+    }
+    section.content div.divulgacoes {
+        display: none
+    }
+    section.content div.carousel-cnt {
+        display: block;
+        width: 400px
+    }
+    section.content div.resultado-busca {
+        margin: 20px 0
+    }
+    section.content div.resultado-busca div.termo {
+        font-size: 16px
+    }
+    section.content div.resultado-busca div.termo span.termosBuscado {
+        font-size: 27px
+    }
+    section.content div.resultado-busca div.total {
+        color: #fff
+    }
+    section.content div.resultado-busca div.total span {
+        display: inline-block;
+        margin-right: 5px;
+        font-size: 20px;
+        font-weight: 600
+    }
+    section.content div.busca-nao-encontrada div.notFound {
+        font-size: 25px
+    }
+    section.content div.busca-nao-encontrada div.notFound span.breaker {
+        width: 250px
+    }
+    section.content aside {
+        display: block;
+        top: 205px
+    }
+    section.content div.cnt-vitrine {
+        float: none;
+        margin: 0 auto;
+        width: 98%
+    }
+    section.content div.cnt-vitrine div.main ul li {
+        width: 100%;
+        border-bottom: 2px solid #000
+    }
+    section.content div.cnt-vitrine div.main ul li:after {
+        display: none
+    }
+    section.content div.cnt-vitrine div.main ul li:before {
+        display: none
+    }
+    section.content div.cnt-vitrine div.main ul li div.productImageWrapper {
+        padding: 1.5%;
+        width: 45%;
+        display: inline-block;
+        vertical-align: middle;
+        float: left
+    }
+    section.content div.cnt-vitrine div.main ul li div.data {
+        position: relative;
+        width: 53%;
+        vertical-align: middle;
+        display: inline-block;
+        text-align: left;
+        padding-left: 20px
+    }
+    section.content div.cnt-vitrine div.main ul li div.data p.price {
+        line-height: 22px
+    }
+    section.content div.cnt-vitrine div.main ul li div.data p.price a span.newPrice em {
+        font-size: 26px;
+        color: #000;
+        font-weight: 400
+    }
+    section.content div.cnt-vitrine div.main ul li div.data p.price a em.installment {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000
+    }
+    section.content div.cnt-vitrine div.main ul li div.data h3 {
+        display: block;
+        margin-top: 10%;
+        font-size: 16px
+    }
+    section.content div.cnt-vitrine div.main ul li div.data h3 a {
+        color: #000
+    }
+    section.content div.cnt-vitrine div.main ul li div.data div.buttonBy {
+        display: block;
+        margin-top: 10%
+    }
+    section.content div.cnt-vitrine div.main ul li div.data div.buttonBy a {
+        display: block;
+        width: 200px;
+        height: 24px;
+        background: url(btn-adicionar-sacola.png) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+        text-indent: -1000px;
+        display: none
+    }
+    section.content div.cnt-vitrine div.main ul li a p.btn, section.content div.cnt-vitrine div.main ul li a p.btn:hover {
+        display: block;
+        width: 200px;
+        height: 24px;
+        background: url(btn-adicionar-sacola.png) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+        text-indent: -1000px;
+        left: 50%;
+        margin-left: -10px
+    }
+    section.content div.cnt-vitrine div.main ul li a .txt {
+        display: none
+    }
+    section.content div.cnt-vitrine div.main ul li a.prateleira-hover {
+        background: none
+    }
+    section.content div.cnt-vitrine div.main ul li div.data {
+        display: inline-block !important;
+        margin-top: 5px
+    }
+}
+@media (max-width:479px) {
+    section.content.produtoDetail div.extras-oculos ul {
+        width: 100%
+    }
+    section.content.produtoDetail div.extras-oculos ul li {
+        width: 100%;
+        margin: 5px 0 20px
+    }
+    section.content.produtoDetail div.extras-oculos ul li:after {
+        border-bottom: 0
+    }
+    section.content.produtoDetail div.extras-oculos ul li:before {
+        border-left: 0
+    }
+    section.content.produtoDetail div.extras-oculos ul li.flanela {
+        margin-bottom: 0
+    }
+    section.content div.cnt-vitrine div.main ul li a .txt {
+        display: none
+    }
+    section.content div.cnt-vitrine div.main ul li a.prateleira-hover {
+        background: none
+    }
+    section.content div.cnt-vitrine div.main ul li div.data {
+        display: inline-block !important
+    }
+}
+@media (max-width:400px) {
+    section.content.produtoDetail .cntPrdDetail div.detalhes div.preco-holder p.descricao-preco em.valor-por strong.skuBestPrice {
+        font-size: 18px
+    }
+    section.content.produtoDetail .cntPrdDetail div.detalhes div.preco-holder p.descricao-preco em.valor-dividido {
+        font-size: 14px
+    }
+    section.content.produtoDetail .cntPrdDetail div.detalhes div.botao a.buy-button {
+        width: 130px;
+        font-size: 21px;
+        background: #f24d52 none;
+        text-align: center;
+        padding-left: 0;
+        line-height: 45px
+    }
+    section.content div.carousel-cnt {
+        display: block;
+        width: 270px
+    }
+    section.content div.busca-nao-encontrada div.notFound {
+        margin: 0 auto 30px
+    }
+    section.content div.busca-nao-encontrada div.top-categorias {
+        width: 100%;
+        float: none;
+        border-right: 0;
+        margin: 0 auto 30px;
+        display: table
+    }
+    section.content div.busca-nao-encontrada div.top-categorias span.ico {
+        display: block;
+        margin: 0 auto
+    }
+    section.content div.busca-nao-encontrada div.top-categorias span.ico img {
+        width: 50px;
+        margin: 0 auto 10px
+    }
+    section.content div.busca-nao-encontrada div.top-categorias ul li {
+        margin: 12px auto;
+        float: left;
+        text-align: center;
+        width: 100%
+    }
+    section.content div.busca-nao-encontrada div.top-categorias ul li a {
+        font-size: 14px
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias div.bolsas, section.content div.busca-nao-encontrada div.outras-categorias div.kids, section.content div.busca-nao-encontrada div.outras-categorias div.lifestyle {
+        width: 150px;
+        float: none
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias div.bolsas ul, section.content div.busca-nao-encontrada div.outras-categorias div.kids ul, section.content div.busca-nao-encontrada div.outras-categorias div.lifestyle ul {
+        display: none
+    }
+    section.content div.busca-nao-encontrada div.outras-categorias div.bolsas a, section.content div.busca-nao-encontrada div.outras-categorias div.kids a, section.content div.busca-nao-encontrada div.outras-categorias div.lifestyle a {
+        font-size: 15px;
+        display: block;
+        line-height: 20px;
+        background: url(seta-busca-nao-encontrada-small.gif) right no-repeat
+    }
+    section.content aside {
+        display: block
+    }
+    section.content div.cnt-vitrine div.main ul li div.data p.price {
+        line-height: 20px
+    }
+    section.content div.cnt-vitrine div.main ul li div.data p.price a span.newPrice em {
+        font-size: 20px
+    }
+    section.content div.cnt-vitrine div.main ul li div.data p.price a em.installment {
+        font-size: 15px
+    }
+    section.content div.cnt-vitrine div.main ul li div.data h3 {
+        font-size: 14px
+    }
+    section.content div.cnt-vitrine div.main ul li div.data div.buttonBy {
+        display: block;
+        margin-top: 10%
+    }
+    section.content div.cnt-vitrine div.main ul li div.data div.buttonBy a {
+        display: block;
+        width: 200px;
+        height: 24px;
+        background: url(btn-adicionar-sacola.png) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+        text-indent: -1000px;
+        display: none
+    }
+    section.content div.cnt-vitrine div.main ul li a p.btn, section.content div.cnt-vitrine div.main ul li a p.btn:hover {
+        display: block;
+        width: 170px;
+        height: 24px;
+        background: url(btn-adicionar-sacola.png) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+        text-indent: -1000px;
+        left: 50%;
+        margin-left: -20px
+    }
+    section.content div.cnt-vitrine div.main ul li a .txt {
+        display: none
+    }
+    section.content div.cnt-vitrine div.main ul li a.prateleira-hover {
+        background: none
+    }
+    section.content div.cnt-vitrine div.main ul li div.data {
+        display: inline-block !important
+    }
+}
+@media (max-width:350px) {
+    section.content div.carousel-cnt {
+        display: block;
+        width: 270px
+    }
+    section.content div.cnt-vitrine div.main ul li div.data {
+        margin-top: 7px
+    }
+    section.content div.cnt-vitrine div.main ul li div.data h3 {
+        margin-top: 0
+    }
+    section.content div.cnt-vitrine div.main ul li a p.btn, section.content div.cnt-vitrine div.main ul li a p.btn:hover {
+        display: block;
+        width: 130px;
+        height: 24px;
+        background: url(btn-adicionar-sacola-mobile.png) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+        text-indent: -1000px;
+        left: 50%;
+        margin-left: 0
+    }
+}
+@media(min-width:768px) {
+    body.home .lightboxChilli {
+        display: none;
+        z-index: 999;
+        position: fixed;
+        background: #141414 url(bg-lightbox.jpg) center top no-repeat;
+        border: 8px solid #3d3d3d;
+        width: 706px;
+        height: 394px;
+        top: 50%;
+        left: 50%;
+        margin-left: -353px;
+        margin-top: -200px
+    }
+    body.home .lightboxChilli .btnFechar {
+        cursor: pointer;
+        width: 22px;
+        height: 22px;
+        background: #ff0101 url(fecharLightBox.png) no-repeat 5px;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    body.home .lightboxChilli h2 {
+        color: #ff0101;
+        font-size: 41px;
+        font-weight: 700;
+        line-height: 42px
+    }
+    body.home .lightboxChilli .texto {
+        width: 550px;
+        margin: auto;
+        margin-top: 30px
+    }
+    body.home .lightboxChilli p {
+        font-size: 20px;
+        color: #868686;
+        margin-top: 5px
+    }
+    body.home .lightboxChilli strong {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ff0101;
+        margin: 20px 0 10px;
+        display: block
+    }
+    body.home .lightboxChilli .form {
+        float: left
+    }
+    body.home .lightboxChilli input {
+        border-radius: 4px;
+        border: 0;
+        font-family: Dosis, sans-serif;
+        padding: 8px
+    }
+    body.home .lightboxChilli input[type="text"] {
+        width: 284px;
+        margin-left: 8px;
+        display: block;
+        margin-top: 3px
+    }
+    body.home .lightboxChilli input[type="button"] {
+        background: #ff0101;
+        color: #FFF;
+        padding: 7px 40px !important;
+        border-bottom: 2px solid #b4181d !important;
+        margin: 8px 9px;
+        font-weight: 700
+    }
+    body.home .lightboxChilli .texto .form .msg.sucesso {
+        background: #00FF2A;
+        display: inline-block;
+        font-size: 14px;
+        padding: 5px 10px;
+        border-radius: 3px;
+        border-bottom: 2px solid #008816;
+        margin-top: 5px;
+        font-weight: 600
+    }
+    body.home .lightboxChilli .texto .form .msg.erro {
+        background: red;
+        display: inline-block;
+        font-size: 14px;
+        padding: 5px 10px;
+        border-radius: 3px;
+        border-bottom: 2px solid #800;
+        margin-top: 5px;
+        font-weight: 600;
+        color: #FFF
+    }
+    body.home .overlay-lightbox {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: #000;
+        opacity: .9;
+        z-index: 2;
+        z-index: 99
+    }
+}
+@media(min-width:200px) and (max-width:767px) {
+    #chamadas li .box-banner a img {
+        width: 100%;
+        height: 100%;
+        padding: 0 2px
+    }
+    body.home .lightboxChilli, body.home .overlay-lightbox {
+        display: none !important
+    }
+    section.content div.cabecalho-vitrine-mobile {
+        display: none
+    }
+}
+@media(min-width:768px) {
+    section.content div.cabecalho-vitrine-mobile {
+        display: none !important
+    }
+}
+@media(max-width:1280px) {
+    #chamadas li .box-banner a img {
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px
+    }
+    .vitrine-reestruturacao {
+        width: 98%;
+        //width: 1190px;
+        display: block;
+        margin: 50px auto;
+        clear: both
+    }
+    .vitrine-reestruturacao .bloco {
+        width: 100%;
+        display: block;
+        clear: both;
+        margin-bottom: 50px;
+        padding-bottom: 200px
+    }
+    .vitrine-reestruturacao .bloco .img-vitrine, .vitrine-reestruturacao .bloco .colecao-vitrine {
+        float: left;
+        display: block
+    }
+    .vitrine-reestruturacao .bloco .img-vitrine {
+        width: 32%
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine .new-vitrine h2 {
+        display: none
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine {
+        width: 68%;
+        background-color: #fff
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li {
+        width: 100%;
+        //width: 232px;
+        height: 239px;
+        float: left;
+        display: block;
+        position: relative;
+        margin-left: 4px;
+        border-right: solid 1px #ececec
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li span.price {
+        display: none
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li:hover a.internal-link {
+        display: block
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a.internal-link {
+        width: 100%;
+        //width: 236px;
+        height: 239px;
+        background: url(lancamentos-overlay.png);
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: none
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a.internal-link p.code {
+        margin-top: 50px
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a.internal-link p.sub {
+        margin-top: 23px
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a p.btn {
+        width: 163px;
+        height: 24px;
+        margin-left: -82px;
+        padding: 0 0 0 12px;
+        background: url(btn-new-adicionar-a-sacola.jpg) no-repeat;
+        bottom: 12px;
+        left: 50%;
+        text-indent: -999999px;
+        position: absolute;
+        border-radius: 3px
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li img {
+        width: 173px;
+        height: auto;
+        margin: 21px auto;
+        display: block
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li.helperComplement {
+        width: 4px;
+        height: 212px;
+        border-right: solid 1px #ececec;
+        margin-top: 13px
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine .owl-carousel .owl-wrapper .owl-item {
+        float: left
+    }
+    .owl-controls .owl-buttons div {
+        background: url(seta-vitrines.png) no-repeat 0 0;
+        text-indent: -999999px;
+        width: 18px;
+        height: 32px;
+        position: absolute
+    }
+    .owl-controls .owl-buttons .owl-prev {
+        background-position: 0 0;
+        top: 99px;
+        left: 10px
+    }
+    .owl-controls .owl-buttons .owl-next {
+        background-position: -23px 0;
+        top: 99px;
+        right: 0
+    }
+}
+@media(max-width:767px) {
+    .vitrine-reestruturacao .bloco .colecao-vitrine ul li a.internal-link {
+        display: none !important
+    }
+    #widget .first-item .transbox {
+        display: none !important
+    }
+}
+@media(min-width:0) {
+    div#nova-prateleira {
+        width: 100%;
+        display: block
+    }
+    div#nova-prateleira a {
+        text-decoration: none;
+        display: block
+    }
+    div#nova-prateleira span.preco p.price span.newPrice>span {
+        display: none
+    }
+    div#nova-prateleira span.preco p.price span.newPrice {
+        width: 100%;
+        display: block
+    }
+    div#nova-prateleira span.preco p.price span.newPrice>em {
+        font-size: 16px;
+        color: #868686;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        display: block
+    }
+    div#nova-prateleira span.preco p.price em.installment {
+        font-style: normal;
+        font-size: 16px;
+        display: block;
+        color: #ed1e25;
+        margin-top: 2px;
+        margin-bottom: 5px;
+        font-weight: 900;
+        text-align: center
+    }
+    div#nova-prateleira span.preco.visible-desktop {
+        display: none
+    }
+}
+@media(max-width:320px) {
+    div#nova-prateleira span.imagem {
+        margin-right: 15px !important
+    }
+    div#nova-prateleira span.preco {
+        top: 0 !important;
+        margin-top: 0 !important
+    }
+    div#nova-prateleira span.preco p.price span.newPrice em {
+        font-size: 20px !important
+    }
+    div#nova-prateleira span.preco p.price em.installment {
+        clear: both;
+        display: block;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600
+    }
+    div#nova-prateleira span.preco>h3 {
+        font-size: 14px !important;
+        text-decoration: none
+    }
+    div#nova-prateleira div.buttonBy a.link-produto {
+        height: 21px !important
+    }
+    div#nova-prateleira div.buttonBy {
+        top: 108px !important;
+        left: 143px !important;
+        z-index: 1
+    }
+    div#nova-prateleira span.preco p.price em.installment {
+        font-size: 15px !important;
+        color: #000
+    }
+    body.produto .flag.lancamentos-da-semana {
+        background: #000;
+        float: left
+    }
+    body.produto .flag.lancamentos-da-semana {
+        width: 62px;
+        height: 66px;
+        background: url(flag-selo-lancamentos.png) no-repeat top right;
+        font-size: 0;
+        float: left;
+        position: absolute;
+        display: block !important;
+        margin-top: -475px;
+        top: -440px;
+        right: 73px
+    }
+}
+@media(min-width:480px) {
+    div#nova-prateleira span.imagem {
+        max-width: 45%;
+        float: left;
+        display: block;
+        margin-right: 32px
+    }
+    div#nova-prateleira span.preco {
+        margin-top: 13px;
+        display: block;
+        float: left
+    }
+    div#nova-prateleira span.preco p.price {
+        margin-bottom: 16px
+    }
+    div#nova-prateleira span.preco p.price span.newPrice em {
+        font-size: 26px;
+        text-align: left;
+        font-style: normal;
+        color: #000
+    }
+    div#nova-prateleira span.preco p.price em.installment {
+        clear: both;
+        display: block;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600
+    }
+    div#nova-prateleira span.preco>h3 {
+        font-size: 16px;
+        text-decoration: none;
+        color: #000
+    }
+    div#nova-prateleira div.buttonBy {
+        display: block;
+        clear: both;
+        position: absolute;
+        top: 137px;
+        left: 228px
+    }
+    div#nova-prateleira div.buttonBy a.link-produto {
+        width: 200px;
+        height: 24px;
+        background: url(btn-adicionar-sacola.png) center center no-repeat;
+        display: block
+    }
+    div#nova-prateleira div.buttonBy div.buy-button-normal {
+        display: none
+    }
+    body.produto .flag.lancamentos-da-semana {
+        width: 62px;
+        height: 66px;
+        background: url(flag-selo-lancamentos.png) no-repeat top right;
+        font-size: 0;
+        float: left;
+        position: absolute;
+        display: block !important;
+        margin-top: -475px;
+        top: -440px;
+        right: 73px
+    }
+}
+@media(min-width:640px) {
+    .menu-flutuante-up {
+        display: none
+    }
+    .menu-flutuante-down {
+        display: none
+    }
+    div#nova-prateleira span.preco>h3, div#nova-prateleira div.buttonBy {
+        display: none
+    }
+    body.departamento.novo div.prateleira.vitrine ul>li:hover #nova-prateleira>span.visible-phones {
+        display: none
+    }
+    body.departamento.novo div.prateleira.vitrine ul>li:hover #nova-prateleira>span.visible-desktop {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        background-color: transparent
+    }
+    body.departamento.novo div.prateleira.vitrine ul>li:hover #nova-prateleira span.visible-desktop span.overlay {
+        display: block;
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        opacity: .7;
+        position: absolute;
+        top: 0
+    }
+    body.departamento.novo div.prateleira.vitrine ul>li:hover #nova-prateleira span.visible-desktop>h3 {
+        display: block;
+        text-align: center;
+        margin-bottom: -34px;
+        color: #fff;
+        z-index: 2;
+        position: relative;
+        padding-top: 67px;
+        font-size: 12px
+    }
+    body.departamento.novo div.prateleira.vitrine ul>li:hover #nova-prateleira span.visible-desktop>h3>a {
+        color: #fff;
+        display: block
+    }
+    body.departamento.novo div.prateleira.vitrine ul>li:hover #nova-prateleira span.visible-desktop p.price {
+        top: 33% !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        margin-top: 100px;
+        z-index: 2;
+        display: block
+    }
+    body.departamento.novo ul>li:hover #nova-prateleira span.visible-desktop p.price span.newPrice>em, body.departamento.novo ul>li:hover #nova-prateleira span.visible-desktop p.price em.installment {
+        color: #fff;
+        font-size: 26px;
+        font-weight: 400
+    }
+    body.departamento.novo ul>li:hover #nova-prateleira span.preco p.price {
+        display: none
+    }
+    body.departamento.novo ul>li:hover #nova-prateleira span.preco.visible-phones {
+        width: 100%;
+        height: 52px;
+        background-color: #fff;
+        display: block
+    }
+    body.departamento.novo ul>li:hover #nova-prateleira span.visible-phones p.price {
+        display: none
+    }
+    body.produto .flag.lancamentos-da-semana {
+        width: 62px;
+        height: 66px;
+        background: url(flag-selo-lancamentos.png) no-repeat top right;
+        font-size: 0;
+        float: left;
+        position: absolute;
+        display: block !important;
+        margin-top: -475px;
+        top: -440px;
+        right: 73px
+    }
+    .vitrine-reestruturacao {
+        width: 627px
+    }
+    .vitrine-reestruturacao .bloco .img-vitrine {
+        width: 38%
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine {
+        width: 62%;
+        background-color: #fff
+    }
+}
+@media(min-width:768px) {
+    #banner-contador {
+        width: 100%;
+        display: block;
+        position: relative
+    }
+    #banner-contador a {
+        width: 100%;
+        display: block;
+        border: none
+    }
+    #banner-contador a>.contador {
+        width: 761px;
+        height: 238px;
+        top: 220px;
+        left: 50%;
+        margin-left: -359px;
+        position: absolute;
+        display: block
+    }
+    #banner-contador a>.contador span {
+        width: 194px;
+        font-family: Arial;
+        font-size: 188px;
+        color: #fff;
+        float: left;
+        margin-right: 52px;
+        display: block
+    }
+    #banner-contador a>.contador span.weeks, #banner-contador a>.contador span.days {
+        display: none !important
+    }
+    #banner-contador .imagem-estatica {
+        display: none !important
+    }
+    body.produto .flag.lancamentos-da-semana {
+        top: 48px;
+        left: -470px
+    }
+    body.new-banner .vitrine-reestruturacao {
+        width: 735px
+    }
+    .vitrine-reestruturacao .bloco .img-vitrine {
+        width: 33%
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine {
+        width: 67%
+    }
+}
+@media(max-width:768px) {
+    .menu-flutuante-up {
+        display: none !important
+    }
+    .menu-flutuante-down {
+        display: none !important
+    }
+    .banner {
+        top: 45px;
+        display: block
+    }
+    .seta-red {
+        display: none
+    }
+}
+@media(min-width:0) {
+    body.new-banner #banner-main {
+        width: 100%;
+        position: relative
+    }
+    body.new-banner #banner-main .banner-main-mobile {
+        width: 100%;
+        margin-top: 55px
+    }
+    body.new-banner #banner-main .banner-main-desktop, body.new-banner #banner-main .thumbs {
+        display: none !important
+    }
+    body.new-banner #banner-main .banner-main-mobile img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto
+    }
+    body.new-banner .bar-featured {
+        width: 100%;
+        min-height: 57px
+    }
+    body.new-banner .bar-featured .frete {
+        width: 50%;
+        height: 100%;
+        float: left;
+        background: #f13e44
+    }
+    body.new-banner .bar-featured .frete .cnt {
+        width: 100%;
+        height: 57px;
+        padding: 10px 13px
+    }
+    body.new-banner .bar-featured .frete .cnt img {
+        max-width: 100%;
+        height: auto
+    }
+    body.new-banner .bar-featured .frete .cnt .texto {
+        font-size: 11px;
+        color: #e7a626;
+        float: left;
+        text-transform: uppercase;
+        padding-left: 26%
+    }
+    body.new-banner .bar-featured .troca {
+        width: 50%;
+        height: 100%;
+        float: left;
+        background: #e7a626
+    }
+    body.new-banner .bar-featured .troca .cnt {
+        width: 100%;
+        height: 57px;
+        padding: 10px 13px
+    }
+    body.new-banner .bar-featured .troca .cnt img {
+        max-width: 100%;
+        width: 126px;
+        height: auto
+    }
+    body.new-banner .bar-featured .troca .cnt .texto {
+        font-size: 11px;
+        color: #ab094a;
+        float: left;
+        text-transform: uppercase;
+        padding-left: 22%;
+        position: relative;
+        top: -2px
+    }
+    body.new-banner .bar-featured .troca .cnt .texto strong{
+        display:none;
+    }
+    body.new-banner #banner-main .owl-buttons .owl-prev {
+        font-size: 0;
+        background: none;
+        position: absolute;
+        top: 50% !important;
+        left: 10px !important;
+        margin-top: -20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, .6)
+    }
+    body.new-banner #banner-main .owl-buttons .owl-next {
+        font-size: 0;
+        background: none;
+        position: absolute;
+        top: 50% !important;
+        right: 10px !important;
+        left: inherit !important;
+        margin-top: -20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, .6)
+    }
+    body.new-banner #banner-main .owl-buttons .owl-prev:before {
+        content: "";
+        vertical-align: middle;
+        margin-right: 10px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 15px solid black;
+        display: block;
+        margin: 12px 0 0 10px;
+        opacity: .6
+    }
+    body.new-banner #banner-main .owl-buttons .owl-next:before {
+        content: "";
+        vertical-align: middle;
+        margin-right: 10px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 15px solid black;
+        display: block;
+        margin: 12px 0 0 14px;
+        opacity: .6
+    }
+    .disclaimer-outlet {
+        background: #e7a626;
+        color: #ab094a;
+        font-size: 13px;
+        text-align: center;
+        border: 0;
+        display: block;
+    }
+    
+    .disclaimer-outlet strong {
+        display:block;
+        margin: 5px auto;
+        padding: 5px 0;
+        width: 90%;
+    }
+}
+@media(min-width:760px) {
+    body.new-banner #banner-main .banner-main-mobile {
+        display: none !important
+    }
+    body.new-banner #banner-main .banner-main-desktop {
+        display: block !important;
+        margin-top: 45px
+    }
+    body.new-banner #banner-main .banner-main-desktop img {
+        max-width: 100%;
+        height: auto;
+        display: block
+    }
+    body.new-banner #banner-main .thumbs {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-top: -38px
+    }
+    body.new-banner #banner-main .thumbs .box-banner {
+        width: 72px;
+        float: left;
+        margin-right: 2px
+    }
+    body.new-banner #banner-main .thumbs .box-banner a {
+        cursor: pointer
+    }
+    body.new-banner #banner-main .thumbs .box-banner img {
+        max-width: 100%
+    }
+    body.new-banner .bar-featured {
+        min-height: 33px
+    }
+    body.new-banner .bar-featured .frete .cnt {
+        width: 343px;
+        height: 33px;
+        float: right;
+        padding-right: 65px;
+        padding-top: 7px;
+        padding-bottom: 0
+    }
+    body.new-banner .bar-featured .frete .cnt img {
+        width: 140px;
+        float: left
+    }
+    body.new-banner .bar-featured .frete .cnt .texto {
+        padding-left: 0;
+        float: right;
+        padding-top: 5px;
+        font-size: 10px
+    }
+    body.new-banner .bar-featured .troca .cnt {
+        width: 343px;
+        height: 33px;
+        float: left;
+        padding-left: 65px;
+        padding-top: 6px;
+        padding-bottom: 0
+    }
+    body.new-banner .bar-featured .troca .cnt img {
+        width: 117px;
+        float: left
+    }
+    body.new-banner .bar-featured .troca .cnt .texto {
+        padding-left: 0;
+        float: right;
+        padding-top: 5px;
+        font-size: 10px;
+        font-weight: 700
+    }
+    body.new-banner .seta-red span {
+        display: none !important
+    }
+    body.new-banner .seta-red {
+        display: block !important;
+        height: 29px
+    }
+    body.new-banner .seta-red:before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 100%;
+        margin-top: -29px;
+        background: url(seta-white.png) no-repeat 0 0;
+        background-size: 100%
+    }
+    body.new-banner .vitrine-reestruturacao {
+        margin-top: 10px
+    }
+}
+@media(min-width:992px) {
+    body.new-banner #banner-main .banner-main-desktop {
+        margin-top: 0
+    }
+    body.new-banner #banner-main .banner-main-desktop img {
+        margin: 0 auto
+    }
+    body.new-banner #banner-main .thumbs {
+        margin-top: -80px
+    }
+    body.new-banner #banner-main .thumbs .box-banner {
+        width: 124px
+    }
+    body.new-banner #banner-main .owl-buttons .owl-prev {
+        left: 20px !important
+    }
+    body.new-banner #banner-main .owl-buttons .owl-prev:hover, body.new-banner #banner-main .owl-buttons .owl-next:hover {
+        background: rgba(255, 255, 255, .9)
+    }
+    body.new-banner #banner-main .owl-buttons .owl-prev:hover:before, body.new-banner #banner-main .owl-buttons .owl-next:hover:before {
+        opacity: 1
+    }
+    body.new-banner #banner-main .owl-buttons .owl-next {
+        right: 20px !important
+    }
+    body.new-banner #banner-main .owl-controls .owl-pagination {
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        margin-top: -50px;
+        width: 100%
+    }
+    body.new-banner #banner-main .owl-controls .owl-pagination .owl-page {
+        display: inline-block;
+        margin-right: 10px
+    }
+    body.new-banner #banner-main .owl-controls .owl-pagination .owl-page span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #FFF;
+        opacity: .8;
+        border-radius: 100%
+    }
+    body.new-banner #banner-main .owl-controls .owl-pagination .owl-page.active span {
+        width: 22px;
+        height: 22px;
+        opacity: 1
+    }
+    body.new-banner .bar-featured .frete .cnt {
+        width: 450px;
+        height: 56px;
+        padding-top: 13px
+    }
+    body.new-banner .bar-featured .frete .cnt img {
+        width: auto
+    }
+    body.new-banner .bar-featured .frete .cnt .texto {
+        font-size: 16px
+    }
+    body.new-banner .bar-featured .troca .cnt {
+        width: 450px;
+        height: 56px;
+        padding-top: 12px
+    }
+    body.new-banner .bar-featured .troca .cnt img {
+        width: auto
+    }
+    body.new-banner .bar-featured .troca .cnt .texto {
+        padding-top: 6px;
+        font-size: 16px;
+        width: 220px;
+        margin-top: -8px;
+        margin-right: -60px;
+    }
+    body.new-banner .bar-featured .troca .cnt .texto strong{
+        font-size: 8px;
+        float: left;
+    }        
+    body.new-banner .seta-red {
+        height: 45px
+    }
+    body.new-banner .seta-red:before {
+        width: 35px;
+        height: 35px;
+        margin-top: -22px
+    }
+    body.new-banner .vitrine-reestruturacao {
+        margin-top: 10px;
+        width: 98%
+    }
+    .vitrine-reestruturacao .bloco .img-vitrine {
+        width: 24%
+    }
+    .vitrine-reestruturacao .bloco .colecao-vitrine {
+        width: 76%
+    }
+    .disclaimer-outlet {
+        display: none !important;
+    }
+    body.new-banner .bar-featured .troca .cnt .texto strong{
+        display:block !important;
+    }
+}
+@media(max-width:1023px) {
+    #banner-contador a {
+        display: none !important
+    }
+    #banner-contador {
+        height: auto !important;
+        background: none !important
+    }
+    #banner-contador .imagem-estatica {
+        display: block !important
+    }
+    #banner-contador .imagem-estatica>img {
+        max-width: 100% !important;
+        height: auto;
+        display: block
+    }
+    body.produto .flag.lancamentos-da-semana {
+        top: 18px;
+        right: 443px
+    }
+}
+@media(min-width:1023px) {
+    #banner-contador a .imagem-contador>img {
+        max-width: 100% !important;
+        height: auto
+    }
+    #banner-contador a>.contador {
+        width: 41%;
+        height: 238px;
+        top: 128px;
+        left: 50%;
+        margin-left: -167px;
+        position: absolute;
+        display: block
+    }
+    #banner-contador a>.contador span {
+        width: 84px;
+        font-family: Arial;
+        font-size: 78px;
+        color: #fff;
+        float: left;
+        margin-right: 39px;
+        display: block
+    }
+    body.produto .flag.lancamentos-da-semana {
+        top: 48px;
+        left: -470px
+    }
+}
+@media(min-width:1280px) {
+    #banner-contador a>.contador {
+        top: 137px;
+        margin-left: -237px
+    }
+    #banner-contador a>.contador span {
+        width: 144px;
+        font-size: 128px;
+        margin-right: 20px
+    }
+    body.produto .flag.lancamentos-da-semana {
+        top: 28px;
+        left: -570px
+    }
+    .vitrine-reestruturacao {
+        width: 1189px !important
+    }
+}
+@media(min-width:1366px) {
+    #banner-contador a>.contador {
+        top: 152px !important;
+        margin-left: -237px
+    }
+    #banner-contador a>.contador span {
+        width: 144px;
+        font-size: 128px;
+        margin-right: 20px
+    }
+    body.produto .flag.lancamentos-da-semana {
+        top: 48px;
+        right: 483px
+    }
+}
+@media(min-width:13682px) {
+    #banner-contador a>.contador {
+        top: 152px !important;
+        margin-left: -237px
+    }
+    #banner-contador a>.contador span {
+        width: 144px;
+        font-size: 128px;
+        margin-right: 20px
+    }
+}
+@media(min-width:1264px) {
+    #banner-contador a>.contador {
+        top: 137px;
+        margin-left: -237px
+    }
+    #banner-contador a>.contador span {
+        width: 144px;
+        font-size: 128px;
+        margin-right: 20px
+    }
+    body.produto .flag.lancamentos-da-semana {
+        top: 28px;
+        left: -570px
+    }
+}
+@media(min-width:1650px) {
+    #banner-contador a>.contador {
+        top: 187px;
+        margin-left: -297px
+    }
+    #banner-contador a>.contador span {
+        width: 184px;
+        font-size: 168px;
+        margin-right: 20px
+    }
+    body.produto .flag.lancamentos-da-semana {
+        top: 48px;
+        left: -560px
+    }
+}
+@media(min-width:1600px) {
+    #banner-contador a>.contador {
+        top: 187px !important;
+        margin-left: -273px
+    }
+    #banner-contador a>.contador span {
+        width: 174px;
+        font-size: 100px;
+        margin-right: 20px
+    }
+    body.produto .flag.lancamentos-da-semana {
+        top: 48px;
+        left: -560px
+    }
+}
+@media(min-width:1584px) {
+    #banner-contador a>.contador {
+        top: 187px !important;
+        margin-left: -300px
+    }
+    #banner-contador a>.contador span {
+        width: 196px;
+        font-size: 148px;
+        margin-right: 20px
+    }
+    body.produto .flag.lancamentos-da-semana {
+        top: 48px;
+        left: -560px
+    }
+}
+@media(min-width:1920px) {
+    #banner-contador a>.contador {
+        top: 237px !important;
+        margin-left: -325px
+    }
+    #banner-contador a>.contador span {
+        width: 211px;
+        font-size: 168px;
+        margin-right: 20px
+    }
+    body.produto .flag.lancamentos-da-semana {
+        top: 48px;
+        left: -560px
+    }
+}
+@media(min-width:320px) and (max-width:480px) {
+    .seta-red {
+        margin-top: 39px
+    }
+    .vitrine-reestruturacao {
+        margin-top: 5px
+    }
+    footer div.disclaimer {
+        float: left
+    }
+}
+.txt-introdutorio {
+    font-family: 'Dosis', sans-serif;
+    color: #b9b9b9;
+    font-size: 16px;
+    padding-top: 20px;
+    display: block
+}
+body.blackfriday .is-countdown {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 270px;
+    margin-top: 115px;
+    z-index: 9
+}
+body.blackfriday .is-countdown span.countdown-row {
+    padding: 5px 10px;
+    display: table;
+    color: #FFF;
+    margin: 10px auto 10px 6px;
+    font-size: 25px;
+    font-weight: 700
+}
+.container-countdown span.countdown-row span.countdown-section {
+    width: 120px;
+    float: left;
+    display: block;
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center
+}
+body.blackfriday .is-countdown span.hora {
+    display: block;
+    color: #000;
+    font-size: 62px;
+    font-weight: 700;
+    margin-top: 30px;
+    padding-left: 15px
+}
+body.blackfriday .is-countdown span.min {
+    display: block;
+    color: #000;
+    font-size: 62px;
+    font-weight: 700;
+    margin-top: -78px;
+    padding-left: 130px
+}
+body.blackfriday .is-countdown span.seg {
+    display: block;
+    color: #000;
+    font-size: 62px;
+    font-weight: 700;
+    margin-top: -78px;
+    padding-left: 245px
+}
+.container-countdown span.countdown-period {
+    display: none
+}
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y
+}
+.owl-carousel .owl-wrapper {
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0)
+}
+.owl-carousel .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+    -webkit-transition: height 500ms ease-in-out;
+    -moz-transition: height 500ms ease-in-out;
+    -ms-transition: height 500ms ease-in-out;
+    -o-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out
+}
+.owl-carousel .owl-item {
+    float: left
+}
+.owl-controls .owl-page, .owl-controls .owl-buttons div {
+    cursor: pointer
+}
+.owl-controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+.grabbing {
+    cursor: url(grabbing.png) 8 8, move
+}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0)
+}
+.seta-red {
+    position: relative;
+    cursor: pointer
+}
+.seta-red span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -25px
+}
+body.produto .redes>div {
+    float: left
+}
+body.liquida-chilli .flag.liquida-geral {
+    display: none !important
+}
+@media(min-width:320px) {
+    #banner-main .contador {
+        position: absolute;
+        top: 139px;
+        left: 89px;
+        width: 184px
+    }
+    #banner-main .contador span {
+        font-size: 38px;
+        color: #262460;
+        text-align: center;
+        display: block;
+        font-family: Arial;
+        font-weight: 700;
+        float: left;
+        width: 60px
+    }
+}
+@media(min-width:360px) {
+    #banner-main .contador {
+        left: 115px;
+        top: 119px;
+        margin-top: 19px
+    }
+}
+@media(min-width:480px) {
+    #banner-main .contador {
+        position: absolute;
+        top: 118px;
+        left: 157px;
+        width: 195px
+    }
+    #banner-main .contador span {
+        font-size: 38px;
+        color: #262460;
+        text-align: center;
+        display: block;
+        font-family: Arial;
+        font-weight: 700;
+        float: left;
+        width: 63px
+    }
+}
+@media(min-width:640px) {
+    #banner-main .contador {
+        position: absolute;
+        top: 181px;
+        left: 233px;
+        width: 195px
+    }
+    #banner-main .contador span {
+        font-size: 38px;
+        color: #262460;
+        text-align: center;
+        display: block;
+        font-family: Arial;
+        font-weight: 700;
+        float: left;
+        width: 64px
+    }
+}
+@media(min-width:768px) {
+    #banner-main .contador {
+        position: absolute;
+        top: 80px;
+        left: 285px;
+        width: 204px
+    }
+    #banner-main .contador span {
+        font-size: 51px;
+        color: #262460;
+        text-align: center;
+        display: block;
+        font-family: Arial;
+        font-weight: 700;
+        float: left;
+        width: 67px
+    }
+}
+@media(min-width:1024px) {
+    #banner-main .contador {
+        top: 114px;
+        left: 386px;
+        width: 271px
+    }
+    #banner-main .contador span {
+        font-size: 58px;
+        float: left;
+        width: 88px
+    }
+}
+@media(min-width:1200px) {
+    #banner-main .contador {
+        top: 136px;
+        left: 481px;
+        width: 319px
+    }
+    #banner-main .contador span {
+        font-size: 81px;
+        float: left;
+        width: 103px
+    }
+}
+@media(min-width:1280px) {
+    #banner-main .contador {
+        top: 145px;
+        left: 518px;
+        width: 340px
+    }
+    #banner-main .contador span {
+        font-size: 81px;
+        float: left;
+        width: 111px
+    }
+}
+@media(min-width:1366px) {
+    #banner-main .contador {
+        top: 260px;
+        left: 514px;
+        width: 364px
+    }
+    #banner-main .contador span {
+        font-size: 81px;
+        float: left;
+        width: 117px
+    }
+}
+@media(min-width:1366px) {
+    #banner-main .contador {
+        top: 130px;
+        left: 521px
+    }
+}
+@media(min-width:1600px) {
+    #banner-main .contador {
+        top: 172px;
+        left: 610px;
+        width: 414px
+    }
+    #banner-main .contador span {
+        font-size: 100px;
+        float: left;
+        width: 138px
+    }
+}
+@media(min-width:1680px) {
+    #banner-main .contador {
+        top: 321px;
+        left: 633px;
+        width: 445px
+    }
+    #banner-main .contador span {
+        font-size: 100px;
+        float: left;
+        width: 145px
+    }
+}
+@media(min-width:1920px) {
+    #banner-main .contador {
+        top: 224px;
+        left: 749px;
+        width: 506px
+    }
+    #banner-main .contador span {
+        font-size: 100px;
+        float: left;
+        width: 166px
+    }
+}
+body.home-blackfriday-producao #banner-blackfriday {
+    width: 100%;
+    height: 386px;
+    background: url(bg-home-blackfriday-countdown-2016.jpg) no-repeat top center;
+    position: relative
+}
+body.home-blackfriday-producao #banner-blackfriday div#contador-bf {
+    width: 266px;
+    height: 62px;
+    position: absolute;
+    bottom: 97px;
+    left: 50%;
+    margin-left: -115px;
+    color: #fff;
+    font-size: 55px;
+    font-family: Arial;
+    font-weight: 700
+}
+body.home-blackfriday-producao #banner-blackfriday a {
+    display: block;
+    width: 100%;
+    height: 386px
+}
+body.home-blackfriday-producao #contador-bf span {
+    height: 80px;
+    margin-right: 37px
+}
+body.home.home-blackfriday-producao .vitrine-reestruturacao {
+    margin-top: -23px
+}
+body.resultado-busca .text-seo-ld, body.categoria .text-seo-ld, body.departamento .text-seo-ld {
+    margin-top: 20px
+}
+body.resultado-busca .text-seo-ld h3, body.categoria .text-seo-ld h3, body.departamento .text-seo-ld h3 {
+    color: #FFF;
+    background: transparent;
+    font-size: 16px
+}
+span.countdown-period {
+    display: none
+}
+@media(min-width:1024px) {
+    .selo-franqueado {
+        width: 120px;
+        height: 120px;
+        display: block;
+        position: fixed;
+        right: 20px;
+        z-index: 999999;
+        bottom: 50px
+    }
+    .selo-franqueado a.btn-fechar {
+        width: 100%;
+        text-align: right;
+        padding-top: 10px;
+        color: #fff;
+        text-decoration: none;
+        display: block
+    }
+    .selo-franqueado a.selo {
+        width: 100%;
+        height: 100%;
+        background: url(SEJAUMFREANQUEADO.jpg) no-repeat center;
+        background-size: 100%;
+        display: block;
+        text-indent: -999999px
+    }
+}
+.area-medida {
+    margin-top: 10px;
+    position: relative
+}
+.btn-medidas {
+    background-image: url(btn-medidas.jpg);
+    display: block;
+    position: relative;
+    width: 202px;
+    height: 35px;
+    margin: 0 auto 10px;
+    border: none
+}
+.lightbox-medidas {
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    position: fixed;
+    z-index: 999999999999;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0
+}
+.lightbox-medidas.active {
+    outline: none;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+.inside-lightbox-medida {
+    position: absolute;
+    width: 940px;
+    height: 600px;
+    margin-left: -470px;
+    margin-top: -300px;
+    left: 50%;
+    top: 50%;
+    background-color: #141414;
+    border: 10px solid #3d3d3d
+}
+.inside-lightbox-medida:before, .inside-lightbox-medida:after {
+    display: table;
+    content: " "
+}
+.inside-lightbox-medida:after {
+    clear: both
+}
+.close-lightbox-medida {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #c91e25;
+    color: white;
+    width: 25px;
+    height: 25px;
+    cursor: pointer
+}
+.close-lightbox-medida:before {
+    font-family: 'Arial', sans-serif;
+    content: 'X';
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    color: white;
+    font-size: 18px
+}
+.half-content {
+    float: left;
+    width: 50%
+}
+.half-content .especificacoes-medidas {
+    margin-top: 50px
+}
+.half-content .especificacoes-medidas ul {
+    padding: 0;
+    margin: 0
+}
+.half-content .especificacoes-medidas ul li {
+    position: relative;
+    width: 337px;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #3D3D3D
+}
+.half-content .especificacoes-medidas ul li em {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 5px;
+    position: relative;
+    float: left;
+    width: 85px;
+    color: #595d5c
+}
+.half-content .especificacoes-medidas ul li span {
+    position: relative;
+    float: left;
+    margin-left: 50px;
+    color: white
+}
+.img-lightbox-medidas.oculos {
+    display: block;
+    text-align: center;
+    margin: 25px
+}
+.img-lightbox-medidas.relogio {
+    display: block;
+    text-align: center;
+    margin: 25px
+}
+.img-lightbox-medidas img {
+    height: auto;
+    max-width: 100%
+}
+@media(max-width:1024px) {
+    .selo-franqueado {
+        display: none !important
+    }
+}
+@media (max-width:991px) {
+    .inside-lightbox-medida {
+        position: relative;
+        width: auto;
+        height: auto;
+        margin: 10px;
+        left: auto;
+        top: auto;
+        border-width: 4px
+    }
+    .img-lightbox-medidas.oculos, .img-lightbox-medidas.relogio {
+        background-size: cover
+    }
+}
+@media (max-width:767px) {
+    .half-content {
+        float: none;
+        width: 100%
+    }
+    .half-content .especificacoes-medidas {
+        margin-top: 20px
+    }
+    .half-content .especificacoes-medidas ul li {
+        text-align: center;
+        width: 100%
+    }
+    .half-content .especificacoes-medidas ul li em, .half-content .especificacoes-medidas ul li span {
+        float: none;
+        display: inline-block
+    }
+    section.content.produtoDetail .cntPrdDetail div.detalhes div.botao .garantia {
+        display: none
+    }
+    .area-medida {
+        clear: both;
+        float: none;
+        text-align: center
+    }
+}
+@media(min-width:992px) {
+    body.landing section.content div.cnt-vitrine div.main div.pager.bottom {
+        display: block !important
+    }
+}
+
+// body {
+//     display: none!important
+// }
