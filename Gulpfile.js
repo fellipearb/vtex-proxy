@@ -28,10 +28,10 @@ gulp.task('sass', function () {
 
 gulp.task('serve', ['sass'], function () {
     browserSync.init({
-        // https: true,
+        https: true,
         host: configs.accountName + '.vtexlocal.com.br',
         startPath: '/',
-        proxy: 'http://loja.'+ configs.accountName + '.com.br',
+        proxy: 'https://loja.'+ configs.accountName + '.com.br',
         serveStatic: [{
             route: '/arquivos',
             dir: ['./build/arquivos']
