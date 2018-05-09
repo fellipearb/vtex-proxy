@@ -1,7 +1,4 @@
 {
     "accountName": "jcsbrasil",
-    "https": true,
-    "sass": "/sass/**/*.scss",
-    "js": "/js/**/*.scss",
-    "images": "/images/**/*./[jpg,png,gif]/"
+    "https": true
 }

@@ -7,10 +7,15 @@ var config = JSON.parse(fs.readFileSync('configs.json'));
 var source = {
     src: './src',
     buid: '/buid/arquivos'
+},
+paths = {
+    sass: source.src + '/sass/**/*.scss',
+    js: source.src + '/js/**/*.scss',
+    images: source.src + '/images/**/*./[jpg,png,gif]/'
 }
 
 gulp.task('sass', function () {
-    return gulp.src(source.src + config.sass)
+    return gulp.src(paths.sass)
         .pipe(sass({
             'sourcemap=none': true,
             noCache: true,
@@ -22,6 +27,8 @@ gulp.task('sass', function () {
 
 gulp.task('serve', ['sass'], function () {
     browserSync.init({
+        codeSync: true,
+        open: "external",
         https: config.https || true,
         host: config.accountName + '.vtexlocal.com.br',
         startPath: '/',
@@ -32,5 +39,5 @@ gulp.task('serve', ['sass'], function () {
         }]
     });
 
-    gulp.watch([config.sass], ['sass']);
+    gulp.watch([paths.sass], ['sass']);
 });
