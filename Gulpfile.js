@@ -1,6 +1,12 @@
+var fs = require('fs');
 var gulp = require("gulp");
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var config = JSON.parse(fs.readFileSync('conf/config.json'));
+
+// console.log(config);
+
+// return;
 
 var source = {
     src: './src',
@@ -10,9 +16,6 @@ paths = {
     sass: source.src + '/sass/**/*.scss',
     js: source.src + '/js/**/*.scss',
     images: source.src + '/images/**/*./[jpg,png,gif]/'
-},
-configs = {
-    accountName: 'chillibeans'
 }
 
 gulp.task('sass', function () {
@@ -29,9 +32,9 @@ gulp.task('sass', function () {
 gulp.task('serve', ['sass'], function () {
     browserSync.init({
         https: true,
-        host: configs.accountName + '.vtexlocal.com.br',
+        host: config.accountName + '.vtexlocal.com.br',
         startPath: '/',
-        proxy: 'https://loja.'+ configs.accountName + '.com.br',
+        proxy: 'https://' + config.accountName + '.com.br',
         serveStatic: [{
             route: '/arquivos',
             dir: ['./build/arquivos']
