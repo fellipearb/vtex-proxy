@@ -1,0 +1,5 @@
+{
+    "sass": "/sass/**/*.scss",
+    "js": "/js/**/*.scss",
+    "images": "/images/**/*./[jpg,png,gif]/"
+}

@@ -3,23 +3,15 @@ var gulp = require("gulp");
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var config = JSON.parse(fs.readFileSync('conf/config.json'));
-
-// console.log(config);
-
-// return;
+var paths = JSON.parse(fs.readFileSync('conf/paths.json'));
 
 var source = {
     src: './src',
     buid: '/buid/arquivos'
-},
-paths = {
-    sass: source.src + '/sass/**/*.scss',
-    js: source.src + '/js/**/*.scss',
-    images: source.src + '/images/**/*./[jpg,png,gif]/'
 }
 
 gulp.task('sass', function () {
-    return gulp.src(paths.sass)
+    return gulp.src(source.src + paths.sass)
         .pipe(sass({
             'sourcemap=none': true,
             noCache: true,
