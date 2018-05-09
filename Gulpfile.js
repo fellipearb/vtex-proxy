@@ -2,7 +2,7 @@ var fs = require('fs');
 var gulp = require("gulp");
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
-var config = JSON.parse(fs.readFileSync('conf/configs.json'));
+var config = JSON.parse(fs.readFileSync('configs.json'));
 
 var source = {
     src: './src',
