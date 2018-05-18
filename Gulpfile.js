@@ -27,7 +27,7 @@ gulp.task('sass', function () {
 
 gulp.task('serve', ['sass'], function () {
     browserSync.init({
-        open: "external",
+        open: false,
         https: config.https || true,
         host: config.accountName + '.vtexlocal.com.br',
         startPath: '/',

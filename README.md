@@ -18,13 +18,21 @@ Enter the folder you cloned or downloaded, install dependencies and run `npm run
     npm run dev
 ```
 
+First, open your browser here to authenticate:
+
+https://your-store-account-name.vtexcommercestable.com.br/admin/Site/Login.aspx
+
+AND
+
+https://your-store-account-name.vtexlocal.com.br:3000/admin/Site/Login.aspx
+
 ## Features
 
 All files in `src/` are compiled, optimized and copied to `build/` when you run `gulp`.
 
 Currently supported:
 
-- LiveReload of assets in HTTP and HTTPS
+- LiveReload of assets HTTPS
 - SASS compilation
 - JS and CSS Minification
 
