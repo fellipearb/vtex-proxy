@@ -10,7 +10,7 @@ var source = {
 },
 paths = {
     sass: source.src + '/sass/**/*.scss',
-    js: source.src + '/js/**/*.scss',
+    js: source.src + '/js/**/*.js',
     images: source.src + '/images/**/*./[jpg,png,gif]/'
 }
 
