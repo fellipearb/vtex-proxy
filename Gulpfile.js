@@ -45,7 +45,6 @@ gulp.task('copy', () => {
 gulp.task('sass', () => {
     let scss = gulp.src(paths.sass)
         .pipe(sass(sassStyle).on('error', sass.logError))
-        .pipe(rename({ suffix: '.min' }))
     
     if(environment == 'dev')
         scss.pipe(sourcemaps.write())    
@@ -58,7 +57,6 @@ gulp.task('sass', () => {
 
 gulp.task('scripts', ['browserReload'], () => {
     let script = gulp.src(paths.scripts)
-        .pipe(rename({ suffix: '.min' }))
 
     if(environment == 'prod')
         script.pipe(uglify())
@@ -76,8 +74,9 @@ gulp.task('images', () => {
 
 gulp.task('browserSync', () => {
     browserSync.init({
+        open: false,
         https: config.https || true,
-        host: 'https://' + config.accountName + '.vtexlocal.com.br',
+        host: config.accountName + '.vtexlocal.com.br',
         startPath: '/admin/login/',
         proxy: 'https://' + config.accountName + '.vtexcommercestable.com.br',
         serveStatic: [{
