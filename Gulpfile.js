@@ -69,7 +69,7 @@ gulp.task('sass:checkout', () => {
     if(environment == 'dev')
         scss = scss.pipe(sourcemaps.write())
 
-        scss.pipe(gulp.dest(bases.build + '/files'))
+        scss.pipe(gulp.dest(bases.build + '/../files'))
         scss = scss.pipe(browserSync.stream())
 
     return scss
@@ -92,7 +92,7 @@ gulp.task('scripts:checkout', ['browserReload'], () => {
     if(environment == 'prod')
         script.pipe(uglify())
 
-    script.pipe(gulp.dest(bases.build + '/files'))
+    script.pipe(gulp.dest(bases.build + '/../files'))
 
         return script
 })
@@ -106,7 +106,7 @@ gulp.task('images', () => {
 gulp.task('images:checkout', () => {
     return gulp.src(paths.imagesCheckout)
         .pipe(imagemin(imageCompress))
-        .pipe(gulp.dest(bases.build + '/files'))
+        .pipe(gulp.dest(bases.build + '/../files'))
 })
 
 gulp.task('browserSync', () => {
@@ -118,7 +118,7 @@ gulp.task('browserSync', () => {
         proxy: 'https://' + config.accountName + '.vtexcommercestable.com.br',
         serveStatic: [{
             route: ['/files', '/arquivos'],
-            dir: [bases.build + '/files', bases.build + '/arquivos']
+            dir: [bases.build + '/../files', bases.build]
         }]
     })
 })
@@ -139,12 +139,12 @@ gulp.task('browserReload', (cb) => {
 
 gulp.task('dev', () => {
     setEnv('dev')
-    runSequence('clean', 'images', 'images:checkout', ['copy', 'sass', 'sass:checkout', 'fakeApi', 'scripts', 'scripts:checkout'], 'browserSync', 'watch')
+    runSequence('clean', 'images', 'images:checkout', ['copy', 'sass', 'sass:checkout', 'scripts', 'scripts:checkout'], 'browserSync', 'watch')
 })
 
 gulp.task('prod', () => {
     setEnv('prod')
-    runSequence('clean', 'images', 'images:checkout', ['copy', 'sass', 'sass:checkout', 'fakeApi', 'scripts', 'scripts:checkout'])
+    runSequence('clean', 'images', 'images:checkout', ['copy', 'sass', 'sass:checkout', 'scripts', 'scripts:checkout'])
 })
 
 gulp.task('default', () => {
