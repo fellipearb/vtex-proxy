@@ -1,5 +1,6 @@
 var fs          = require('fs')
 var gulp        = require("gulp")
+var path        = require('path')
 var HubRegistry = require('gulp-hub');
 var clean       = require('gulp-clean')
 var sass        = require('gulp-sass')

@@ -1,5 +1,6 @@
 var fs          = require('fs')
 var gulp        = require("gulp")
+var path        = require('path')
 var clean       = require('gulp-clean')
 var sass        = require('gulp-sass')
 var concat      = require('gulp-concat')
@@ -26,7 +27,17 @@ sassStyle = {
 imageCompress = {};
 
 gulp.task('sass:website-dev', () => {
-    return gulp.src(paths.sass)
+    
+    function getFolders(dir) {
+        return fs.readdirSync(dir).filter(function(file) {
+            return fs.statSync(path.join(dir, file)).isDirectory();
+        });
+    }
+
+    var folders = getFolders("./routes");
+
+    var tasks = folders.map(function(folder) {
+        return gulp.src(path.join("./routes", folder, '/**/*.scss'))
         .pipe(sass(sassStyle).on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(rename({
@@ -36,17 +47,31 @@ gulp.task('sass:website-dev', () => {
             path.basename = path.basename.replace('controller.', '');
         }))
         .pipe(gulp.dest(bases.build));
+   });
+
 });
 
 gulp.task('scripts:website-dev', () => {
-    return gulp.src(paths.scripts)
+
+    function getFolders(dir) {
+        return fs.readdirSync(dir).filter(function(file) {
+            return fs.statSync(path.join(dir, file)).isDirectory();
+        });
+    }
+
+    var folders = getFolders("./routes");
+
+    var tasks = folders.map(function(folder) {
+        return gulp.src(path.join("./routes", folder, '/**/*.js'))
         .pipe(rename({
             suffix: '.min',
             prefix: config.fileName
         })).pipe(rename(function (path) {
             path.basename = path.basename.replace('controller.', '');
         }))
-        .pipe(gulp.dest(bases.build))
+        .pipe(gulp.dest(bases.build));
+   });
+
 });
 
 gulp.task('images:website-dev', () => {
