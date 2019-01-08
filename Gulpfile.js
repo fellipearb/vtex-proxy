@@ -17,12 +17,16 @@ var hub = new HubRegistry(['./src/common/gulpfile-common-dev.js', './src/website
 let bases = {
     src:   './src',
     build: './build'
+},
+paths = {
+    sass: bases.src + '/common/routes/header/*.scss',
 }
 
 gulp.task('clean', () => {
     return gulp.src(bases.build)
         .pipe(clean({force: true}))
-})
+});
+
 
 gulp.task('browserSync', () => {
     browserSync.init({
@@ -38,8 +42,19 @@ gulp.task('browserSync', () => {
     })
 })
 
+gulp.task('watch', () => {
+    gulp.watch([paths.sass], ['sass'])
+});
+
+gulp.task('browserReload', (cb) => {
+    browserSync.reload()
+    cb()
+});
+
+
+
 gulp.task('dev', () => {
-	runSequence('clean', ['sass:common-dev', 'scripts:common-dev', 'images:common-dev', 'sass:website-dev', 'scripts:website-dev', 'images:website-dev', 'browserSync']);
+	runSequence('clean', ['sass:common-dev', 'scripts:common-dev', 'images:common-dev', 'sass:website-dev', 'scripts:website-dev', 'images:website-dev'], 'browserSync', 'watch');
 })
 
 gulp.task('default', () => {
