@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "gulp-concat": "^2.6.1",
-    "gulp-hub": "^0.8.0"
+    "gulp-hub": "^0.8.0",
+    "gulp-replace": "^1.0.0"
   }
 }

@@ -25,21 +25,31 @@ sassStyle = {
 },
 imageCompress = {};
 
-gulp.task('sass:common-dev', () => {
+gulp.task('sass:website-dev', () => {
     return gulp.src(paths.sass)
         .pipe(sass(sassStyle).on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(concat(config.fileName + 'common.min.css'))
+        .pipe(rename({
+            suffix: '.min',
+            prefix: config.fileName
+        })).pipe(rename(function (path) {
+            path.basename = path.basename.replace('controller.', '');
+        }))
         .pipe(gulp.dest(bases.build));
 });
 
-gulp.task('scripts:common-dev', () => {
+gulp.task('scripts:website-dev', () => {
     return gulp.src(paths.scripts)
-        .pipe(concat(config.fileName + 'common.min.js'))
+        .pipe(rename({
+            suffix: '.min',
+            prefix: config.fileName
+        })).pipe(rename(function (path) {
+            path.basename = path.basename.replace('controller.', '');
+        }))
         .pipe(gulp.dest(bases.build))
 });
 
-gulp.task('images:common-dev', () => {
+gulp.task('images:website-dev', () => {
     return gulp.src(paths.images)
         .pipe(imagemin(imageCompress))
         .pipe(gulp.dest(bases.build))
