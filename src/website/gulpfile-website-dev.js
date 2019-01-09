@@ -35,6 +35,7 @@ gulp.task('sass:website-dev', () => {
     }
 
     var folders = getFolders("./routes");
+    var prefixFile = config.fileName + "-";
 
     var tasks = folders.map(function(folder) {
         return gulp.src(path.join("./routes", folder, '/**/*.scss'))
@@ -42,7 +43,7 @@ gulp.task('sass:website-dev', () => {
         .pipe(sourcemaps.write())
         .pipe(rename({
             suffix: '.min',
-            prefix: config.fileName
+            prefix: prefixFile
         })).pipe(rename(function (path) {
             path.basename = path.basename.replace('controller.', '');
         }))
@@ -60,12 +61,13 @@ gulp.task('scripts:website-dev', () => {
     }
 
     var folders = getFolders("./routes");
+    var prefixFile = config.fileName + "-";
 
     var tasks = folders.map(function(folder) {
         return gulp.src(path.join("./routes", folder, '/**/*.js'))
         .pipe(rename({
             suffix: '.min',
-            prefix: config.fileName
+            prefix: prefixFile
         })).pipe(rename(function (path) {
             path.basename = path.basename.replace('controller.', '');
         }))
