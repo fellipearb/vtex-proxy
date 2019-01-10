@@ -2,6 +2,7 @@ var fs          = require('fs')
 var gulp        = require("gulp")
 var sass        = require('gulp-sass')
 var concat      = require('gulp-concat')
+var imagemin    = require('gulp-imagemin')
 var sourcemaps  = require('gulp-sourcemaps')
 var browserSync = require('browser-sync').get('app')
 var config      = JSON.parse(fs.readFileSync('configs.json'))
@@ -12,7 +13,7 @@ let bases = {
 },
 paths = {
     sass:    ['./routes/**/*.scss'],
-    images:  ['./assets/images/**/*.png', './assets/images/**/*.jpg', './assets/images/**/*.gif'],
+    images:  ['./assets/**/*.png', './assets/**/*.jpg', './assets/**/*.gif'],
     scripts: ['./routes/**/*.js'],
 },
 sassStyle = {
@@ -38,6 +39,6 @@ gulp.task('scripts:common-dev', () => {
 gulp.task('images:common-dev', () => {
     return gulp.src(paths.images)
         .pipe(imagemin(imageCompress))
-        .pipe(gulp.dest(bases.build))
+        .pipe(gulp.dest(bases.build));
 });
 

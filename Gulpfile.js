@@ -16,69 +16,37 @@ var hub = new HubRegistry(['./src/common/gulpfile-common-dev.js']);
 
 let bases = {
     src: './src',
-    build: './build/arquivos',
+    build: {
+        path: './build/arquivos',
+        images: './build/arquivos/images',
+        icons: './build/arquivos/icons'
+    }
 },
 paths = {
     common: {
         sass: bases.src + '/common/routes/**/*.scss',
-        scripts: bases.src + '/common/routes/**/*.js'
-    },
-    sass: bases.src + '/sass/**/*.scss',
-    sassCheckout: bases.src + '/checkout/sass/**/*.scss',
-    scripts: bases.src + '/js/**/*.js',
-    images: [bases.src + '/images/**/*.png', bases.src + '/images/**/*.jpg', bases.src + '/images/**/*.gif'],
-    copy: [bases.src + '/**/*.eot', bases.src + '/**/*.svg', bases.src + '/**/*.woff', bases.src + '/**/*.woff2']
-},
-environment = undefined,
-sassStyle = {},
-imageCompress = {},
-setEnv = (env) => {
-    environment = env
-    
-    if( env == 'prod' ) {
-        sassStyle = {'sourcemap=none': true, noCache: true, outputStyle: 'compressed'}
-        imageCompress = {optimizationLevel: 5, progressive: true}
+        scripts: bases.src + '/common/routes/**/*.js',
+        images: [bases.src + '/common/assets/**/*.png', bases.src + '/common/assets/**/*.jpg', bases.src + '/common/assets/**/*.gif'],
     }
-}
+},
+imageCompress = {};
+
+//images: [bases.src + '/images/**/*.png', bases.src + '/images/**/*.jpg', bases.src + '/images/**/*.gif'],
 
 gulp.task('clean', () => {
-    return gulp.src(bases.build + '/../')
+    return gulp.src(bases.build.path)
         .pipe(clean())
-})
+});
 
 gulp.task('copy', () => {
     gulp.src(paths.copy)
-        .pipe(gulp.dest(bases.build))
-})
-
-gulp.task('sass', () => {
-    let scss = gulp.src(paths.sass)
-        .pipe(sass(sassStyle).on('error', sass.logError))
-    
-    if(environment == 'dev')
-        scss.pipe(sourcemaps.write())    
-
-        scss.pipe(gulp.dest(bases.build))
-        scss.pipe(browserSync.stream())
-
-    return scss
-})
-
-gulp.task('scripts', ['browserReload'], () => {
-    let script = gulp.src(paths.scripts)
-
-    if(environment == 'prod')
-        script.pipe(uglify())
-
-    script.pipe(gulp.dest(bases.build))
-
-        return script
-})
+        .pipe(gulp.dest(bases.build.path))
+});
 
 gulp.task('images', () => {
     return gulp.src(paths.images)
         .pipe(imagemin(imageCompress))
-        .pipe(gulp.dest(bases.build))
+        .pipe(gulp.dest(bases.build.path))
 })
 
 gulp.task('browserSync', () => {
@@ -92,7 +60,11 @@ gulp.task('browserSync', () => {
         proxy: 'https://' + config.accountName + '.vtexcommercestable.com.br',
         serveStatic: [{
             route: ['/files', '/arquivos'],
-            dir: [bases.build + '/../files', bases.build]
+            dir: [
+                bases.build.path,
+                bases.build.images,
+                bases.build.icons
+            ]
         }]
     })
 });
@@ -102,29 +74,18 @@ gulp.task('browserReload', (cb) => {
     cb();
 });
 
-
-gulp.task('watch', () => {
-    gulp.watch([paths.sass], ['sass'])
-    gulp.watch([paths.sassCheckout], ['sass:checkout'])
-    gulp.watch([paths.scripts], ['scripts'])
-    gulp.watch(paths.images, ['images'])
-    gulp.watch(paths.fonts, ['copy'])
-});
-
-
-
 gulp.task('watch:common-dev', () => {
     gulp.watch(paths.common.sass, ['sass:common-dev']);
     gulp.watch(paths.common.scripts, function() {
         gulp.run('scripts:common-dev', 'browserReload');
     });
+    gulp.watch(paths.common.images, function() {
+        gulp.run('images:common-dev', 'browserReload');
+    });
 });
 
-
-
 gulp.task('dev', () => {
-    setEnv('dev')
-    runSequence('clean', ['images', 'copy', 'sass:common-dev', 'scripts:common-dev', 'sass', 'scripts'], 'browserSync', 'watch', 'watch:common-dev')
+    runSequence('clean', ['images:common-dev', 'sass:common-dev', 'scripts:common-dev'], 'browserSync', 'watch:common-dev');
 })
 
 gulp.task('prod', () => {
