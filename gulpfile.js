@@ -12,7 +12,7 @@ var browserSync = require('browser-sync').create('app')
 var runSequence = require('run-sequence')
 var config      = JSON.parse(fs.readFileSync('configs.json'))
 
-var hub = new HubRegistry(['./src/common/gulpfile-common-dev.js']);
+var hub = new HubRegistry(['./src/common/gulpfile-common-dev.js', './src/website/gulpfile-website-dev.js']);
 
 let bases = {
     src: './src',
@@ -27,7 +27,13 @@ paths = {
         sass: bases.src + '/common/routes/**/*.scss',
         scripts: bases.src + '/common/routes/**/*.js',
         images: [bases.src + '/common/assets/**/*.png', bases.src + '/common/assets/**/*.jpg', bases.src + '/common/assets/**/*.gif'],
+    },
+    website: {
+        sass: bases.src + '/website/routes/**/*.scss',
+        scripts: bases.src + '/website/routes/**/*.js',
+        images: [bases.src + '/website/assets/**/*.png', bases.src + '/website/assets/**/*.jpg', bases.src + '/website/assets/**/*.gif'],
     }
+
 },
 imageCompress = {};
 
@@ -71,8 +77,18 @@ gulp.task('watch:common-dev', () => {
     });
 });
 
+gulp.task('watch:website-dev', () => {
+    gulp.watch(paths.website.sass, ['sass:website-dev']);
+    gulp.watch(paths.website.scripts, function() {
+        gulp.run('scripts:website-dev', 'browserReload');
+    });
+    gulp.watch(paths.website.images, function() {
+        gulp.run('images:website-dev', 'browserReload');
+    });
+});
+
 gulp.task('dev', () => {
-    runSequence('clean', ['images:common-dev', 'sass:common-dev', 'scripts:common-dev'], 'browserSync', 'watch:common-dev');
+    runSequence('clean', ['images:common-dev', 'sass:common-dev', 'scripts:common-dev', 'images:website-dev', 'sass:website-dev', 'scripts:website-dev'], 'browserSync', 'watch:common-dev', 'watch:website-dev');
 })
 
 gulp.task('prod', () => {
