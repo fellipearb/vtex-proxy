@@ -31,23 +31,10 @@ paths = {
 },
 imageCompress = {};
 
-//images: [bases.src + '/images/**/*.png', bases.src + '/images/**/*.jpg', bases.src + '/images/**/*.gif'],
-
 gulp.task('clean', () => {
     return gulp.src(bases.build.path)
         .pipe(clean())
 });
-
-gulp.task('copy', () => {
-    gulp.src(paths.copy)
-        .pipe(gulp.dest(bases.build.path))
-});
-
-gulp.task('images', () => {
-    return gulp.src(paths.images)
-        .pipe(imagemin(imageCompress))
-        .pipe(gulp.dest(bases.build.path))
-})
 
 gulp.task('browserSync', () => {
     browserSync.init({
@@ -94,5 +81,5 @@ gulp.task('prod', () => {
 })
 
 gulp.task('default', () => {
-    console.log('Check package json to run tasks')
+    console.log('Check package json to run tasks');
 })
