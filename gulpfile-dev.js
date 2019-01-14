@@ -32,8 +32,6 @@ let bases = {
         images: './build/files/images/',
         icons: './build/files/icons'
     }
-
-    
 },
 paths = {
     common: {
@@ -110,10 +108,6 @@ gulp.task('watch:checkout-dev', () => {
     gulp.watch(paths.checkout.images, ['images:checkout-dev', 'browserReload']);
 });
 
-gulp.task('dev', () => {
+gulp.task('default', () => {
     runSequence('sass:common-dev', 'scripts:common-dev', 'images:common-dev', 'sass:website-dev', 'scripts:website-dev', 'images:website-dev', 'sass:checkout-dev', 'scripts:checkout-dev', 'images:checkout-dev', 'browserSync', 'watch:common-dev', 'watch:website-dev', 'watch:checkout-dev');
 });
-
-gulp.task('default', () => {
-    console.log('Check package json to run tasks');
-})
