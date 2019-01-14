@@ -1,5 +1,8 @@
 {
     "accountName": "your-store-account-name",
     "fileName": "your-store-file-name",
-    "https": true
+    "https": true,
+    "logConnections": true,
+	"logFileChanges": true,
+	"logLevel": "info"
 }

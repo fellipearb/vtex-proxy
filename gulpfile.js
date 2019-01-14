@@ -12,15 +12,28 @@ var browserSync = require('browser-sync').create('app')
 var runSequence = require('run-sequence')
 var config      = JSON.parse(fs.readFileSync('configs.json'))
 
-var hub = new HubRegistry(['./src/common/gulpfile-common-dev.js', './src/website/gulpfile-website-dev.js']);
+var hub = new HubRegistry([
+    './src/common/gulpfile-common-dev.js',
+    './src/website/gulpfile-website-dev.js',
+    './src/checkout/gulpfile-checkout-dev.js'
+]);
 
 let bases = {
     src: './src',
     build: {
+        base: './build',
         path: './build/arquivos',
-        images: './build/arquivos/images',
+        images: './build/arquivos/images/',
         icons: './build/arquivos/icons'
+    },
+    checkout: {
+        base: './build',
+        path: './build/files',
+        images: './build/files/images/',
+        icons: './build/files/icons'
     }
+
+    
 },
 paths = {
     common: {
@@ -32,21 +45,30 @@ paths = {
         sass: bases.src + '/website/routes/**/*.scss',
         scripts: bases.src + '/website/routes/**/*.js',
         images: [bases.src + '/website/assets/**/*.png', bases.src + '/website/assets/**/*.jpg', bases.src + '/website/assets/**/*.gif'],
+    },
+    checkout: {
+        sass: bases.src + '/checkout/routes/**/*.scss',
+        scripts: bases.src + '/checkout/routes/**/*.js',
+        images: [bases.src + '/checkout/assets/**/*.png', bases.src + '/checkout/assets/**/*.jpg', bases.src + '/checkout/assets/**/*.gif'],
     }
 
 },
 imageCompress = {};
 
 gulp.task('clean', () => {
-    return gulp.src(bases.build.path)
+    return gulp.src(bases.build.base)
         .pipe(clean())
 });
 
 gulp.task('browserSync', () => {
+
     browserSync.init({
         open: false,
-        ui: false,
-        logLevel: "debug",
+        //ui: true,
+        logConnections: config.logConnections || false,
+        logFileChanges: config.logFileChanges || false,
+        logLevel: config.logLevel || "info",
+        logSnippet: true,
         https: config.https || true,
         host: config.accountName + '.vtexlocal.com.br',
         startPath: '/admin/login/',
@@ -56,7 +78,10 @@ gulp.task('browserSync', () => {
             dir: [
                 bases.build.path,
                 bases.build.images,
-                bases.build.icons
+                bases.build.icons,
+                bases.checkout.path,
+                bases.checkout.images,
+                bases.checkout.icons
             ]
         }]
     })
@@ -69,32 +94,25 @@ gulp.task('browserReload', (cb) => {
 
 gulp.task('watch:common-dev', () => {
     gulp.watch(paths.common.sass, ['sass:common-dev']);
-    gulp.watch(paths.common.scripts, function() {
-        gulp.run('scripts:common-dev', 'browserReload');
-    });
-    gulp.watch(paths.common.images, function() {
-        gulp.run('images:common-dev', 'browserReload');
-    });
+    gulp.watch(paths.common.scripts, ['scripts:common-dev', 'browserReload']);
+    gulp.watch(paths.common.images, ['images:common-dev', 'browserReload']);
 });
 
 gulp.task('watch:website-dev', () => {
     gulp.watch(paths.website.sass, ['sass:website-dev']);
-    gulp.watch(paths.website.scripts, function() {
-        gulp.run('scripts:website-dev', 'browserReload');
-    });
-    gulp.watch(paths.website.images, function() {
-        gulp.run('images:website-dev', 'browserReload');
-    });
+    gulp.watch(paths.website.scripts, ['scripts:website-dev', 'browserReload']);
+    gulp.watch(paths.website.images, ['images:website-dev', 'browserReload']);
+});
+
+gulp.task('watch:checkout-dev', () => {
+    gulp.watch(paths.checkout.sass, ['sass:checkout-dev']);
+    gulp.watch(paths.checkout.scripts, ['scripts:checkout-dev', 'browserReload']);
+    gulp.watch(paths.checkout.images, ['images:checkout-dev', 'browserReload']);
 });
 
 gulp.task('dev', () => {
-    runSequence('clean', ['images:common-dev', 'sass:common-dev', 'scripts:common-dev', 'images:website-dev', 'sass:website-dev', 'scripts:website-dev'], 'browserSync', 'watch:common-dev', 'watch:website-dev');
-})
-
-gulp.task('prod', () => {
-    setEnv('prod')
-    //runSequence('clean', 'images', 'images:checkout', ['copy', 'sass', 'sass:checkout', 'scripts', 'scripts:checkout'])
-})
+    runSequence('sass:common-dev', 'scripts:common-dev', 'images:common-dev', 'sass:website-dev', 'scripts:website-dev', 'images:website-dev', 'sass:checkout-dev', 'scripts:checkout-dev', 'images:checkout-dev', 'browserSync', 'watch:common-dev', 'watch:website-dev', 'watch:checkout-dev');
+});
 
 gulp.task('default', () => {
     console.log('Check package json to run tasks');
