@@ -24,6 +24,10 @@ sassStyle = {
     noCache: true,
     outputStyle: 'compressed'
 },
+scriptCompress = {
+    compress: true,
+    toplevel: true
+},
 imageCompress = {
     optimizationLevel: 5,
     progressive: true
@@ -61,7 +65,7 @@ gulp.task('scripts:website-prod', () => {
 
     var tasks = folders.map(function(folder) {
         return gulp.src(path.join("./routes", folder, '/**/*.js'))
-        .pipe(uglify())
+        .pipe(uglify(scriptCompress))
         .pipe(rename({
             suffix: '.min',
             prefix: prefixFile

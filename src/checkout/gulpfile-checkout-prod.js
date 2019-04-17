@@ -17,6 +17,10 @@ paths = {
     images:  ['./assets/**/*.png', './assets/**/*.jpg', './assets/**/*.gif'],
     scripts: ['./routes/**/*.js'],
 },
+scriptCompress = {
+    compress: true,
+    toplevel: true
+},
 sassStyle = {
     'sourcemap=none': true,
     noCache: true,
@@ -37,7 +41,7 @@ gulp.task('sass:checkout-prod', () => {
 gulp.task('scripts:checkout-prod', () => {
     return gulp.src(paths.scripts)
         .pipe(concat(config.fileName + '-checkout.min.js'))
-        .pipe(uglify())
+        .pipe(uglify(scriptCompress))
         .pipe(gulp.dest(bases.build));
 });
 

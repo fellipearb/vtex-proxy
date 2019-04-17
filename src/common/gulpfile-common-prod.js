@@ -22,6 +22,10 @@ sassStyle = {
     noCache: true,
     outputStyle: 'compressed'
 },
+scriptCompress = {
+    compress: true,
+    toplevel: true
+},
 imageCompress = {
     optimizationLevel: 5,
     progressive: true
@@ -37,7 +41,7 @@ gulp.task('sass:common-prod', () => {
 
 gulp.task('scripts:common-prod', () => {
     return gulp.src(paths.scripts)
-        .pipe(uglify())
+        .pipe(uglify(scriptCompress))
         .pipe(concat(config.fileName + '-common.min.js'))
         .pipe(gulp.dest(bases.build));
 });
