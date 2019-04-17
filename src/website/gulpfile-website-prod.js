@@ -49,8 +49,7 @@ gulp.task('sass:website-prod', () => {
         })).pipe(rename(function (path) {
             path.basename = path.basename.replace('controller.', '');
         }))
-        .pipe(gulp.dest(bases.build))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest(bases.build));
    });
 
 });

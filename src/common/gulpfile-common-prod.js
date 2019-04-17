@@ -32,8 +32,7 @@ gulp.task('sass:common-prod', () => {
     return gulp.src(paths.sass)
         .pipe(sass(sassStyle).on('error', sass.logError))
         .pipe(concat(config.fileName + '-common.min.css'))
-        .pipe(gulp.dest(bases.build))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest(bases.build));
 });
 
 gulp.task('scripts:common-prod', () => {

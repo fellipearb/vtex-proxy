@@ -32,7 +32,7 @@ function getFolders(dir) {
 gulp.task('sass:website-dev', () => {
 
     var folders = getFolders("./routes");
-    var prefixFile = config.fileName + "-";
+    var prefixFile = "dev-" + config.fileName + "-";
 
     var tasks = folders.map(function(folder) {
         return gulp.src(path.join("./routes", folder, '/**/*.scss'))
@@ -53,7 +53,7 @@ gulp.task('sass:website-dev', () => {
 gulp.task('scripts:website-dev', () => {
 
     var folders = getFolders("./routes");
-    var prefixFile = config.fileName + "-";
+    var prefixFile = "dev-" + config.fileName + "-";
 
     var tasks = folders.map(function(folder) {
         return gulp.src(path.join("./routes", folder, '/**/*.js'))

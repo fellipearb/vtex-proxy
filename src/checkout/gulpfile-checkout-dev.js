@@ -24,7 +24,7 @@ imageCompress = {};
 gulp.task('sass:checkout-dev', () => {
     return gulp.src(paths.sass)
         .pipe(sass(sassStyle).on('error', sass.logError))
-        .pipe(concat(config.fileName + '-checkout.min.css'))
+        .pipe(concat("dev-" + config.fileName + '-checkout.min.css'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(bases.build))
         .pipe(browserSync.stream());
@@ -32,7 +32,7 @@ gulp.task('sass:checkout-dev', () => {
 
 gulp.task('scripts:checkout-dev', () => {
     return gulp.src(paths.scripts)
-        .pipe(concat(config.fileName + '-checkout.min.js'))
+        .pipe(concat("dev-" + config.fileName + '-checkout.min.js'))
         .pipe(gulp.dest(bases.build));
 });
 

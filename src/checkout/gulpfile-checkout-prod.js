@@ -31,8 +31,7 @@ gulp.task('sass:checkout-prod', () => {
     return gulp.src(paths.sass)
         .pipe(sass(sassStyle).on('error', sass.logError))
         .pipe(concat(config.fileName + '-checkout.min.css'))
-        .pipe(gulp.dest(bases.build))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest(bases.build));
 });
 
 gulp.task('scripts:checkout-prod', () => {
