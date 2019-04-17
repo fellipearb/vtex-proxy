@@ -33,7 +33,7 @@ gulp.task('sass:common-dev', () => {
 gulp.task('scripts:common-dev', () => {
     return gulp.src(paths.scripts)
         .pipe(concat("dev-" + config.fileName + '-common.min.js'))
-        .pipe(gulp.dest(bases.build));
+        .pipe(gulp.dest(bases.build))
 });
 
 gulp.task('images:common-dev', () => {

@@ -109,5 +109,5 @@ gulp.task('watch:checkout-dev', () => {
 });
 
 gulp.task('default', () => {
-    runSequence('sass:common-dev', 'scripts:common-dev', 'images:common-dev', 'sass:website-dev', 'scripts:website-dev', 'images:website-dev', 'sass:checkout-dev', 'scripts:checkout-dev', 'images:checkout-dev', 'browserSync', 'watch:common-dev', 'watch:website-dev', 'watch:checkout-dev');
+    runSequence('clean', ['sass:common-dev', 'scripts:common-dev', 'images:common-dev', 'sass:website-dev', 'scripts:website-dev', 'images:website-dev', 'sass:checkout-dev', 'scripts:checkout-dev', 'images:checkout-dev', 'browserSync', 'watch:common-dev', 'watch:website-dev', 'watch:checkout-dev']);
 });
